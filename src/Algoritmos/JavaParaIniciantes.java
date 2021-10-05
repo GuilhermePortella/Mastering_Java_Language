@@ -1,7 +1,7 @@
 /*
     Exercicios e exemplos de codigos do livro.
  */
-package java.para.iniciantes;
+package Algoritmos;
 
 import Capitulo_3.ex_10;
 import java.io.IOException;
