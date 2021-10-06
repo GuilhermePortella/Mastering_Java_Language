@@ -10,5 +10,9 @@ public class Vehicle {
     int fuelcap;
     int mpg;
     
+    void ranger(){
+        System.out.println("Range is " + fuelcap*mpg);
+    }
+    
     
 }
