@@ -38,33 +38,38 @@ public class Expressoes_Lambda {
 //        asList.stream()
 //                .filter(e -> e % 2 == 0)
 //                .forEach(e -> System.out.println(e));
-        //////////////////////////////////////////////////////////////////////
-        List<Integer> lista = Arrays.asList(1, 5, 8, 9, 1, 4, 7, 6, 6, 9, 9);
-
-        lista.stream()
-                .skip(2)//Pula os 2(n) primeiros registros (n = qualquer numero)
-                .forEach(e -> System.out.println(e));
-        System.out.println("------------------------------------------------");
-        //////////////////////////////////////////////////////////////////////
-        List<Integer> lista2 = Arrays.asList(1, 5, 8, 9, 1, 4, 7, 6, 6, 9, 9);
-
-        lista2.stream()
-                .limit(2)//imprime somente os 2(n) elementos (n = qualquer numero)
-                .forEach(e -> System.out.println(e));
-        System.out.println("------------------------------------------------");
-        //////////////////////////////////////////////////////////////////////
-        List<Integer> lista3 = Arrays.asList(1, 5, 8, 9, 1, 4, 7, 6, 6, 9, 9);
-
-        lista3.stream()
-                .distinct()//não permite elementos repetidos (Utiliza equal e hastcode)
-                .forEach(e -> System.out.println(e));
-        System.out.println("------------------------------------------------");
-        //////////////////////////////////////////////////////////////////////
+//        //////////////////////////////////////////////////////////////////////
+//        List<Integer> lista = Arrays.asList(1, 5, 8, 9, 1, 4, 7, 6, 6, 9, 9);
+//
+//        lista.stream()
+//                .skip(2)//Pula os 2(n) primeiros registros (n = qualquer numero)
+//                .forEach(e -> System.out.println(e));
+//        System.out.println("------------------------------------------------");
+//        //////////////////////////////////////////////////////////////////////
+//        List<Integer> lista2 = Arrays.asList(1, 5, 8, 9, 1, 4, 7, 6, 6, 9, 9);
+//
+//        lista2.stream()
+//                .limit(2)//imprime somente os 2(n) elementos (n = qualquer numero)
+//                .forEach(e -> System.out.println(e));
+//        System.out.println("------------------------------------------------");
+//        //////////////////////////////////////////////////////////////////////
+//        List<Integer> lista3 = Arrays.asList(1, 5, 8, 9, 1, 4, 7, 6, 6, 9, 9);
+//
+//        lista3.stream()
+//                .distinct()//não permite elementos repetidos (Utiliza equal e hastcode)
+//                .forEach(e -> System.out.println(e));
+//        System.out.println("------------------------------------------------");
+//        //////////////////////////////////////////////////////////////////////
         List<Integer> lista4 = Arrays.asList(1, 5, 8, 9, 1, 4, 7, 6, 6, 9, 9);
-
+        List[] lista12= new List[10];
         lista4.stream()
                 .filter(e -> e % 2 == 0) //filter implementa um filtro personalizado 
-                .forEach(e -> System.out.println(e));
+                .forEach(e -> System.out.println(e+"\n"));
         System.out.println("------------------------------------------------");
+
+        for (int i = 1; i <= lista4.size(); i++) {
+            if (lista4.get(i) % 3 == 0) {
+            }
+        }
     }
 }
