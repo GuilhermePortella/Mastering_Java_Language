@@ -2,8 +2,10 @@ package Capitulo_14;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 import javax.swing.JButton;
 
 /**
@@ -60,16 +62,58 @@ public class Expressoes_Lambda {
 //                .forEach(e -> System.out.println(e));
 //        System.out.println("------------------------------------------------");
 //        //////////////////////////////////////////////////////////////////////
-        List<Integer> lista4 = Arrays.asList(1, 5, 8, 9, 1, 4, 7, 6, 6, 9, 9);
-        List[] lista12= new List[10];
-        lista4.stream()
-                .filter(e -> e % 2 == 0) //filter implementa um filtro personalizado 
-                .forEach(e -> System.out.println(e+"\n"));
+//        List<Integer> lista4 = Arrays.asList(1, 5, 8, 9, 1, 4, 7, 6, 6, 9, 9);
+//        lista4.stream()
+//                .filter(e -> e % 2 == 0) //filter implementa um filtro personalizado 
+//                .forEach(e -> System.out.println(e + "\n"));
+//        System.out.println("------------------------------------------------");
+//        //////////////////////////////////////////////////////////////////////
+
+        List<String> list = new ArrayList<>();
+        list.add("Bruna");
+        list.add("Guilherme");
+        list.add("Almeida");
+        list.add("Navaro");
+        list.add(2, "Thor");
+        list.add("Odin");
+        list.add("Anthony");
+
+        for (String ind : list) {
+            System.out.println(ind);
+        }
+        System.out.println("--");
+        
+        list.remove("Thor");//remove o Thor
+
+        for (String ind : list) {
+            System.out.println(ind);
+        }
+        System.out.println("--");
+        
+        list.removeIf(x -> x.charAt(0) == 'A');//remove todos com nome que comeca com A
+
+        for (String ind : list) {
+            System.out.println(ind);
+        }
+        System.out.println("--");
+
+        System.out.println(list.indexOf("Bruna")); //imprime a posicao do elemento desejado
+        System.out.println(list.indexOf("Guilherme")); //imprime a posicao do elemento desejado
+        System.out.println("--");
+
+                              //converte para lambda    //funcao          //retorna para tipo lista
+        List<String> result = list.stream().filter(e -> e.charAt(0) == 'B').collect(Collectors.toList());
+        
+        System.out.println("Nova lista");
+        for (String ind : result) {
+            System.out.println(ind);
+        }
+        System.out.println("--");
+        
+        String nome = list.stream().filter(e -> e.charAt(0) == 'G').findFirst().orElse(null);
+        System.out.println(nome);
+
         System.out.println("------------------------------------------------");
 
-        for (int i = 1; i <= lista4.size(); i++) {
-            if (lista4.get(i) % 3 == 0) {
-            }
-        }
     }
 }
