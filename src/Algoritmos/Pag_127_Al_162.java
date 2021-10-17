@@ -12,5 +12,4 @@ public class Pag_127_Al_162 {
             System.out.print(i + " ");
         }
     }
-    
 }
