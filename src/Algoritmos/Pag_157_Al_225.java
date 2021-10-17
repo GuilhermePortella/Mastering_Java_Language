@@ -6,7 +6,7 @@ import java.util.Scanner;
  *
  * @author Guilherme
  */
-public class Pag_157_Al_224 {
+public class Pag_157_Al_225 {
 
     public static void main(String[] args) {
 
@@ -18,7 +18,7 @@ public class Pag_157_Al_224 {
         nome = scr.nextLine();
 
         for (int a = nome.length(); a >= 0; a--) {
-            System.out.println(nome.substring(0,a));
+            System.out.println(nome.substring(a));
         }
     }
 }
