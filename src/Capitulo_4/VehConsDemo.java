@@ -20,6 +20,5 @@ public class VehConsDemo {
         gallons = sportcar.fluelneeded(dist);
         
         System.out.println("To go " + dist + " miles Sportcar needs " + gallons + " gallons of fuel.");
-    }
-    
+    }   
 }
