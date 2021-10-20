@@ -1,5 +1,6 @@
 package Algoritmos;
 
+import java.util.PriorityQueue;
 import java.util.Scanner;
 
 /**
@@ -18,5 +19,11 @@ public class Pag_138_Al_183 {
             numero = scr.nextInt();
             System.out.println("Quadrado: " + numero*numero);
         }        
+        
+        
+        PriorityQueue as = new PriorityQueue();
+        
+        
+        as.add(as);
     }
 }
