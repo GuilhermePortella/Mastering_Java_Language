@@ -16,14 +16,14 @@ public class Expressoes_Lambda {
 
     public static void main(String[] args) {
         //////////////////////////////////////////////////////////////////////
-//        new Thread(new Runnable() {
-//            @Override
-//            public void run() {
-//                System.out.println("Ola mundo");
-//            }
-//        }).run();
-//
-//        new Thread(() -> System.out.println("Ola mundo" + "2")).start();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("Ola mundo");
+            }
+        }).run();
+
+        new Thread(() -> System.out.println("Ola mundo" + "2")).start();
         //////////////////////////////////////////////////////////////////////
 //        JButton JButton = new JButton();
 //        JButton.addActionListener(new ActionListener() {
