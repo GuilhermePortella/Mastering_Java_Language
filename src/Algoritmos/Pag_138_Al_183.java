@@ -2,11 +2,6 @@ package Algoritmos;
 
 import java.util.PriorityQueue;
 import java.util.Scanner;
-
-/**
- *
- * @author Guilherme
- */
 public class Pag_138_Al_183 {
     
     public static void main(String[] args) {
