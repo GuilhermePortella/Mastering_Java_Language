@@ -21,7 +21,7 @@ public class Pag_253_Al_340 {
         d1 = scr.nextInt();
 
         while (d1 < 0) {
-            System.out.println("DENOMINADOR INVALIDO");
+            System.out.println("DENOMINADOR INVALIDO ");
             System.out.println("Entre com 1 dominador: ");
             d1 = scr.nextInt();
         }
@@ -32,7 +32,7 @@ public class Pag_253_Al_340 {
         d2 = scr.nextInt();
 
         while (d2 < 0) {
-            System.out.println("DENOMINADOR INVALIDO");
+            System.out.println("DENOMINADOR INVALIDO ");
             System.out.println("Entre com 2 dominador: ");
             d1 = scr.nextInt();
         }

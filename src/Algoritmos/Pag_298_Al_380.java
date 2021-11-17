@@ -2,10 +2,6 @@ package Algoritmos;
 
 import java.util.Scanner;
 
-/**
- *
- * @author Guilherme
- */
 public class Pag_298_Al_380 {
     
     public static void main(String[] args) {

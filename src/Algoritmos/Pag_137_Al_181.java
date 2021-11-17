@@ -1,9 +1,5 @@
 package Algoritmos;
 
-/**
- *
- * @author Guilherme
- */
 public class Pag_137_Al_181 {
     
     public static void main(String[] args) {
