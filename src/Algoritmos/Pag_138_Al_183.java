@@ -13,11 +13,9 @@ public class Pag_138_Al_183 {
             System.out.print("Digite o numero: ");
             numero = scr.nextInt();
             System.out.println("Quadrado: " + numero*numero);
-        }        
-        
+        }
         
         PriorityQueue as = new PriorityQueue();
-        
         
         as.add(as);
     }
