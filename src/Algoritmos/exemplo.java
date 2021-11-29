@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Algoritmos;
 
 import java.io.BufferedWriter;
@@ -19,10 +14,10 @@ public class exemplo {
         
         BufferedWriter br = new BufferedWriter(new FileWriter("file2"));
         
-        br.write("Vamos escrever nesse novo arquivo em Java! que legal hahaha!!!");
+        br.write("Vamos escrever nesse novo arquivo em Java!");
         br.newLine();
         br.newLine();
-        br.write("Vamos escrever outra linha aqui embaixo hahaha!!!");
+        br.write("Vamos escrever outra linha");
         br.close();
     }
 
