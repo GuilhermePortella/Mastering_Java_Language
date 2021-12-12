@@ -1,5 +1,7 @@
 package Algoritmos.Grafos1;
 
+import java.awt.DisplayMode;
+
 /**
  *
  * @author Guilherme
