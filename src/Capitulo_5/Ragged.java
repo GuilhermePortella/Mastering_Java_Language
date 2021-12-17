@@ -6,7 +6,6 @@ package Capitulo_5;
  */
 public class Ragged {
     //Aloca manualmente segundas dimenções de tamnhos diferentes.
-
     public static void main(String[] args) {
         int riders[][] = new int[7][];
         riders[0] = new int[10];
