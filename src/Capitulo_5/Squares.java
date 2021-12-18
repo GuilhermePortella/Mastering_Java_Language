@@ -7,6 +7,11 @@ package Capitulo_5;
 public class Squares {
     
     public static void main(String[] args) {
+        
+        int multidim [][][] = new int[4][10][3];
+        int multidim4 [][][][] = new int[4][10][3][1];
+        int multidim7 [][][][][][][] = new int[4][10][3][10][9][8][1];
+        
         int sqrs[][] = {
             { 1, 1 },
             { 2, 4 },
