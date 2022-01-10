@@ -7,6 +7,8 @@ package Algoritmos.Logica;
 public class ImmutableMutable {
 
     public static void main(String[] args) {
+        
+        
         System.out.println("Immutable \n.....");
         Immutable();
         System.out.println(".....");
@@ -33,10 +35,8 @@ public class ImmutableMutable {
     public static void Immutable2(){
         Integer a = 0;
         Integer b = 0;
-        
         a=b;
         b=1;
-        
         System.out.println(a);
         
     }
@@ -47,7 +47,8 @@ public class ImmutableMutable {
         while(a<10){
             System.out.println(a);
             a+=1;
-            
+           
         }
     }
+   
 }
