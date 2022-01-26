@@ -1,4 +1,4 @@
-package Algoritmos.Grafos1;
+package Algoritmos.Grafos;
 
 /**
  *
