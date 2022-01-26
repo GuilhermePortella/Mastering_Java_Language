@@ -1,4 +1,4 @@
-package Algoritmos.Grafos1;
+package Algoritmos.Grafos;
 
 import static java.lang.Integer.SIZE;
 
