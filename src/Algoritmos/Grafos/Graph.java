@@ -34,29 +34,36 @@ public class Graph {
     }
     
     public void displayVertex(int v){
-        System.out.println(vertexList[v].label);
+        System.out.print(vertexList[v].label);
     }
     
-    public void dfs(){
-        vertexList[0].wasVisited = true;
-        displayVertex(0);
-        theStack.push(0);
+    public void dfs(){//busca em profundidade
+        vertexList[0].wasVisited = true;//comeca em 0 -> marca
+        displayVertex(0);//exiba
+        theStack.push(0);//empilha
         
-        while( !theStack.isEmpty() ){
+        while( !theStack.isEmpty() ){ // >vazia
+            //obtem um no adjacente ao topo da pilha nao visitado
             int v = getAdjUnvisitedVertex( theStack.peek());
-            if (v == -1)
-                theStack.pop();
-            else{
+            if (v == -1)//se n houver no
+                theStack.pop();//desenpilha
+            else{//exintente
                 vertexList[v].wasVisited = true;
                 displayVertex(v);
                 theStack.push(v);
             }
         }
+        //a pilha vazia, fim
+        for (int j = 0; j < nVerts; j++) {
+            vertexList[j].wasVisited = false;//redefine
+        }
     }
+    
+    // reftorna um no adjacente a V nao visitado
     public int getAdjUnvisitedVertex(int v){
         for (int j = 0; j < nVerts; j++)
             if(adjMat[v][j]==1 && vertexList[j].wasVisited==false)
-                return j;
-            return -1;
+                return j;//retorna um primeiro no
+            return -1; // nao ha no
     }
 }
