@@ -43,10 +43,10 @@ class UseThreadsImproved{
         MyThread mt = new MyThread("Child #1"); //Cria um objeto executavel
         
         //Em seguida, constroi uma tread a partir desse objeto
-        //Thread newThrd = new Thread(mt); //constroi uma thread nesse objeto
+        Thread newThrd = new Thread(mt); //constroi uma thread nesse objeto
         
         //Para concluir, começa a execução da thread.
-        //newThrd.start(); //começa a executar a thread
+        newThrd.start(); //começa a executar a thread
         
         for (int i = 0; i < 50; i++) {
             System.out.print(".");
