@@ -18,8 +18,8 @@ public class UsandoThreads extends Thread {
     public long getTotal() {
         return total;
     }
-    
-        @Override
+
+    @Override
     public void run() {
         for (long i = valorInicial; i <= valorFinal; i++) {
             total += i;
