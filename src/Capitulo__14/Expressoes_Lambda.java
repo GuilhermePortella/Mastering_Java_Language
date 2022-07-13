@@ -70,7 +70,7 @@ public class Expressoes_Lambda {
         //////////////////////////////////////////////////////////////////////
 
         List<String> list = new ArrayList<>();
-        list.add("Gi");
+        list.add("Bazinga");
         list.add("Guilherme");
         list.add("Almeida");
         list.add("Navaro");
@@ -97,7 +97,7 @@ public class Expressoes_Lambda {
         }
         System.out.println("--");
 
-        System.out.println(list.indexOf("Gi")); //imprime a posicao do elemento desejado
+        System.out.println(list.indexOf("Bazinga")); //imprime a posicao do elemento desejado
         System.out.println(list.indexOf("Guilherme")); //imprime a posicao do elemento desejado
         System.out.println("--");
 
