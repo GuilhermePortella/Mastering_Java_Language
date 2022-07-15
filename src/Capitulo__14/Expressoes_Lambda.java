@@ -76,7 +76,14 @@ public class Expressoes_Lambda {
         list.add("Navaro");
         list.add(2, "Thor");
         list.add("Odin");
-        list.add("Anthony");
+        list.add("Amy Ferrah");
+        list.add("Sheldon");
+        list.add("Penny");
+        list.add("Leonard");
+        list.add("Howard");
+        list.add("Raj");
+        list.add("Stuart");
+        list.add("Arthur Jeffries");
 
         for (String ind : list) {
             System.out.println(ind);
@@ -97,8 +104,9 @@ public class Expressoes_Lambda {
         }
         System.out.println("--");
 
-        System.out.println(list.indexOf("Bazinga")); //imprime a posicao do elemento desejado
-        System.out.println(list.indexOf("Guilherme")); //imprime a posicao do elemento desejado
+        System.out.println(list.indexOf("Sheldon")); //imprime a posicao do elemento desejado
+        System.out.println(list.indexOf("Amy Ferrah")); //imprime a posicao do elemento desejado
+
         System.out.println("--");
 
                               //converte para lambda    //funcao          //retorna para tipo lista
