@@ -20,4 +20,10 @@ public class FatorialNumero {
         JOptionPane.showMessageDialog(null, "O fatorial de " + numero + " é " + fatorial(numero));
     }
     
+    public int numero(){
+        
+        int numero = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite um numero maior do que zero"));
+        return numero;
+
+    }
 }
