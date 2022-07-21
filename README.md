@@ -1,9 +1,22 @@
 # Java para iniciantes do Herbert Schild
 
-- Os arquivos dos programas estão na pasta "src/Capitulo_1, 2, 3 ...".
-- Recomendo baixar a pasta completa e execultar no IDE NetBeans 
-- Execultar arquivos individualmente. O objetivo dos codigos é basicamente explorar e treinar conceitos iniciais 
- da linguagem Java.
- - Irei postar todos os exercicios e exemplos do livro.
+- Os executáveis dos codigos estão na pasta "src/Capitulo_1, 2, 3 ...", sendo esses exemplos conceitos basicos da linguagem, também deixo alguns algoritmos dentre esses exemplos.
+- Para ter os codigos e exemplos em seu computador basta fazer o clone do projeto com:     
+~~~ 
+git clone https://github.com/GuilhermePortella/Java-para-iniciantes-Herbert-Schild.git
+~~~
+
+- Para executar utilize uma IDEIA como netbeans ou eclipse ou execute diretamente no terminal da seguinte forma:
+~~~
+ 1 - Abra seu terminal
+ 2 - Navegar até pasta do projeto
+ 3 - Digite: javac arquivo.java (substituindo pelo nome do arquivo que deseja compilar)
+ 4 - Digite java aquivo.java para execultar o arquivo 
+~~~
  
- Duvidas ou sugestoes estou a disposição.
+ Duvida ou sugestão estou a disposição.
+ 
+ 
+ ---------------------
+ 
+ <h1> Sumário 
