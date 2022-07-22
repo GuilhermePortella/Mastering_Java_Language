@@ -36,4 +36,10 @@ git clone https://github.com/GuilhermePortella/Java-para-iniciantes-Herbert-Schi
   - Capitulo 13
   - Capitulo 14
   - Algoritmos
+     - EstruturaDados
+     - Permutacao
+     - Grafos
+     - Logica
+     - Ordenacao
+     - Recursao
   - Paralelismo
