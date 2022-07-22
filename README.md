@@ -35,4 +35,4 @@ git clone https://github.com/GuilhermePortella/Java-para-iniciantes-Herbert-Schi
   - Capitulo 12
   - Capitulo 13
   - Capitulo 14
-
+  - Algoritmos
