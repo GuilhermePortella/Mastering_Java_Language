@@ -6,7 +6,7 @@
 
 
 
-Operadores de dados:
+Operadores Aritméticos:
 | Operador  | Significado | Exemplo |
 | :---: |     :----:    | :---:  |
 |   +   |      Soma     | 3 + 4  |
