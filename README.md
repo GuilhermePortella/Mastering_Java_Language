@@ -1,4 +1,4 @@
-# Java para iniciantes do Herbert Schild
+# Conceitos Basicos da Linguagem Java
 
 - Os executáveis dos codigos estão na pasta "src/Capitulo_1, 2, 3 ...", sendo esses exemplos conceitos basicos da linguagem, também deixo alguns algoritmos dentre esses exemplos.
 - Para ter os codigos e exemplos em seu computador basta fazer o clone do projeto com:     
@@ -19,7 +19,7 @@ git clone https://github.com/GuilhermePortella/Java-para-iniciantes-Herbert-Schi
  
  ---------------------
  
- <h1> Sumário  </h1>
+ <h1> Sumário - Java para Iniciantes Herbert Schildt </h1>
  
   - Capitulo 1 
   - Capitulo 2
