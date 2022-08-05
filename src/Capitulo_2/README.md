@@ -1,4 +1,4 @@
-<h3>README Capitulo 2</h3>
+### Capitulo 2
 
 # Introdução a tipos de dados e operadores
 
