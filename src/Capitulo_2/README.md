@@ -25,3 +25,24 @@ Operadores de comparação:
 |   >   | Maior que              | X > 3  |
 |   <=  | Menor ou igual         | X <= 3 |
 |   >=  | Maior ou igual         | X >= 3 |
+
+
+Operadores lógicos:
+| Operador  | Significado |
+|  :---:   |          :----:        |
+|    &&    | Operação lógica E (AND)| 
+|    ||    | Aguarde ........       | 
+|    !     | Aguarde ........       | 
+|    &     | Aguarde ........       | 
+|    |     | Aguarde ........       | 
+|    ^     | Aguarde ........       | 
+|    <<    | Aguarde ........       | 
+|    >>    | Aguarde ........       | 
+|   >>>    | Aguarde ........       | 
+|   -      | Aguarde ........       | 
+| x <<= y  | Aguarde ........       | 
+| x >>= y  | Aguarde ........       | 
+| x >>>= y | Atribuição com deslocamento a direita e com preenchimento de zeros ( x = x >>> y ) | 
+|  x &= y  | Aguarde ........       | 
+|  x |= y  | Aguarde ........       | 
+|  x ^= y  | Aguarde ........       | 
