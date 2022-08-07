@@ -30,19 +30,19 @@ Operadores de comparação:
 Operadores lógicos:
 | Operador  | Significado |
 |  :---:   |          :----:        |
-|    &&    | Operação lógica E (AND)| 
-|    ||    | Aguarde ........       | 
-|    !     | Aguarde ........       | 
-|    &     | Aguarde ........       | 
-|    |     | Aguarde ........       | 
-|    ^     | Aguarde ........       | 
-|    <<    | Aguarde ........       | 
-|    >>    | Aguarde ........       | 
-|   >>>    | Aguarde ........       | 
-|   -      | Aguarde ........       | 
-| x <<= y  | Aguarde ........       | 
-| x >>= y  | Aguarde ........       | 
-| x >>>= y | Atribuição com deslocamento a direita e com preenchimento de zeros ( x = x >>> y ) | 
-|  x &= y  | Aguarde ........       | 
-|  x |= y  | Aguarde ........       | 
-|  x ^= y  | Aguarde ........       | 
+|    &&    |Operação lógica E (AND) | 
+|    ||    |Operação lógica OU (OR) | 
+|    !     |Negação lógica          | 
+|    &     |Comparação bit-a-bit E (AND)| 
+|    |     |Comparação bit-a-bit OU (OR)| 
+|    ^     |Comparação bit-a-bit OU-Exclusivo (XOR)| 
+|    <<    |Deslocamento a esquerda | 
+|    >>    |Deslocamento a direita  | 
+|   >>>    |Deslocamento a direita com preenchimento de zeros| 
+|   -      |Complemento bit-a-bit   | 
+| x <<= y  |Atribuição com deslocamento a esquerda ( x = x << y )| 
+| x >>= y  |Atribuição com deslocamento a direita ( x = x >> y )| 
+| x >>>= y |Atribuição com deslocamento a direita e com preenchimento de zeros ( x = x >>> y ) | 
+|  x &= y  |Atribuição AND ( x = x & y )| 
+|  x |= y  |Atribuição OR ( x = x | y )| 
+|  x ^= y  |Atribuição XOR ( x = x ^ y )| 
