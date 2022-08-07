@@ -28,21 +28,98 @@ Operadores de comparação:
 
 
 Operadores lógicos:
-| Operador  | Significado |
-|  :---:   |          :----:        |
-|    &&    |Operação lógica E (AND) | 
-|    ||    |Operação lógica OU (OR) | 
-|    !     |Negação lógica          | 
-|    &     |Comparação bit-a-bit E (AND)| 
-|    |     |Comparação bit-a-bit OU (OR)| 
-|    ^     |Comparação bit-a-bit OU-Exclusivo (XOR)| 
-|    <<    |Deslocamento a esquerda | 
-|    >>    |Deslocamento a direita  | 
-|   >>>    |Deslocamento a direita com preenchimento de zeros| 
-|   -      |Complemento bit-a-bit   | 
-| x <<= y  |Atribuição com deslocamento a esquerda ( x = x << y )| 
-| x >>= y  |Atribuição com deslocamento a direita ( x = x >> y )| 
-| x >>>= y |Atribuição com deslocamento a direita e com preenchimento de zeros ( x = x >>> y ) | 
-|  x &= y  |Atribuição AND ( x = x & y )| 
-|  x   = y  |Atribuição OR ( x = x | y )| 
-|  x ^= y  |Atribuição XOR ( x = x ^ y )| 
+<table>
+  <tr>
+    <td> Operador </td>
+    <td> Significado </td>
+  </tr>
+  
+  <tr>
+    <td> && </td>
+    <td> Operação lógica E (AND) </td>
+  </tr>
+  
+  <tr>
+    <td> || </td>
+    <td> Operação lógica OU (OR) </td>
+  </tr>
+  
+  <tr>
+    <td> ! </td>
+    <td> Negação lógica </td>
+  </tr>
+  
+  <tr>
+    <td> & </td>
+    <td> Comparação bit-a-bit E (AND) </td>
+  </tr>
+  
+  <tr>
+    <td> | </td>
+    <td> Comparação bit-a-bit OU (OR) </td>
+  </tr>
+  
+  <tr>
+    <td> ^ </td>
+    <td> Comparação bit-a-bit OU-Exclusivo (XOR) </td>
+  </tr>
+  
+  <tr>
+    <td> << </td>
+    <td> Deslocamento a esquerda </td>
+  </tr>
+  
+  <tr>
+    <td> >> </td>
+    <td> Deslocamento a direita </td>
+  </tr>
+  
+  <tr>
+    <td> >>> </td>
+    <td> Deslocamento a direita com preenchimento de zeros </td>
+  </tr>
+  
+  <tr>
+    <td> - </td>
+    <td> Complemento bit-a-bit </td>
+  </tr>
+  
+  <tr>
+    <td>  x <<= y  </td>
+    <td> Atribuição com deslocamento a esquerda ( x = x << y ) </td>
+  </tr>
+  
+  <tr>
+    <td> x >>= y </td>
+    <td> Atribuição com deslocamento a direita ( x = x >> y ) </td>
+  </tr>
+  
+  <tr>
+    <td> x >>>= y </td>
+    <td> Atribuição com deslocamento a direita e com preenchimento de zeros ( x = x >>> y ) </td>
+  </tr>
+  
+  <tr>
+    <td> x &= y </td>
+    <td> Atribuição AND ( x = x & y ) </td>
+  </tr>
+  
+  <tr>
+    <td> x  |= y </td>
+    <td> Atribuição OR ( x = x | y ) </td>
+  </tr>
+  
+  <tr>
+    <td> x ^= y </td>
+    <td> Atribuição XOR ( x = x ^ y ) </td>
+  </tr>
+  
+  
+  
+  
+</table>
+
+
+
+
+
