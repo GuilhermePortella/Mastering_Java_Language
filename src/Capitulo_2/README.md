@@ -44,5 +44,5 @@ Operadores lógicos:
 | x >>= y  |Atribuição com deslocamento a direita ( x = x >> y )| 
 | x >>>= y |Atribuição com deslocamento a direita e com preenchimento de zeros ( x = x >>> y ) | 
 |  x &= y  |Atribuição AND ( x = x & y )| 
-|  x |= y  |Atribuição OR ( x = x | y )| 
+|  x   = y  |Atribuição OR ( x = x | y )| 
 |  x ^= y  |Atribuição XOR ( x = x ^ y )| 
