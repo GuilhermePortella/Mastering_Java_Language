@@ -45,4 +45,4 @@ git clone https://github.com/GuilhermePortella/Java-para-iniciantes-Herbert-Schi
   - Paralelismo
   
   
-  # Sumário - Java - Como Programar -10ª Ed Paul Deitel
+  # Sumário - Java Como Programar -10ª Ed Paul Deitel
