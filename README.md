@@ -6,7 +6,7 @@
 git clone https://github.com/GuilhermePortella/Java-para-iniciantes-Herbert-Schild.git
 ~~~
 
-- Para executar utilize uma IDEIA como netbeans ou eclipse ou execute diretamente no terminal da seguinte forma:
+- Para executar utilize uma IDE como netbeans ou eclipse ou execute diretamente no terminal da seguinte forma:
 ~~~
  1 - Abra seu terminal
  2 - Navegar até pasta do projeto
@@ -43,3 +43,6 @@ git clone https://github.com/GuilhermePortella/Java-para-iniciantes-Herbert-Schi
      - Ordenacao
      - Recursao
   - Paralelismo
+  
+  
+  # Sumário - Java - Como Programar -10ª Ed Paul Deitel
