@@ -19,6 +19,13 @@ git clone https://github.com/GuilhermePortella/Java-para-iniciantes-Herbert-Schi
  
  ---------------------
  
+# Conceitos Importantes 
+  - complexidade ciclomática
+  - Tolerância a falhas
+  - Checagem de integridade
+  - Redundância modular tripla
+  - Mirror
+ 
 # Sumário - Java para Iniciantes Herbert Schildt
  
   - Capitulo 1 
