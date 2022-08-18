@@ -11,7 +11,7 @@ git clone https://github.com/GuilhermePortella/Java-para-iniciantes-Herbert-Schi
  1 - Abra seu terminal
  2 - Navegar até pasta do projeto
  3 - Digite: javac arquivo.java (substituindo pelo nome do arquivo que deseja compilar)
- 4 - Digite java aquivo.java para execultar o arquivo 
+ 4 - Digite: java aquivo.java para execultar o arquivo 
 ~~~
  
  Duvida ou sugestão estou a disposição.
