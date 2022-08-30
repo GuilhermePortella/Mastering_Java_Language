@@ -44,12 +44,6 @@ git clone https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Ja
   - Capitulo 13
   - Capitulo 14
   - Algoritmos
-     - EstruturaDados
-     - Permutacao
-     - Grafos
-     - Logica
-     - Ordenacao
-     - Recursao
   - Paralelismo
   
   
