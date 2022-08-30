@@ -1,4 +1,4 @@
-package Algoritmos.Complexidade;
+package Algoritmos.Complexidade.Ciclomática;
 
 /**
  *
@@ -10,7 +10,6 @@ public class Complexidade_Ciclomática {
 
     public static void main(String[] args) {
 
-        String hey = "Oi";
         Complexidade_Ciclomática exemplo = new Complexidade_Ciclomática();
 
         exemplo.cyclomatic();
