@@ -21,6 +21,7 @@ git clone https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Ja
  
 # Conceitos Importantes 
   - Complexidade Ciclomática
+  - Complexidade Cognitiva
   - Tolerância a Falhas
   - Checagem de Integridade
   - Redundância Modular Tripla
