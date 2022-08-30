@@ -31,7 +31,7 @@ git clone https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Ja
  
   - [Capitulo 1 - Fundamentos](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo_1) 
   - [Capitulo 2 - Introdução a tipos de dados e operadores](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo_2)
-  - Capitulo 3 
+  - [Capitulo 3 - Instruções de controle de programa](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo_3)
   - Capitulo 4
   - Capitulo 5 
   - Capitulo 6 
