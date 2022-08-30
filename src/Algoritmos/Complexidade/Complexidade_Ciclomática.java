@@ -6,24 +6,38 @@ package Algoritmos.Complexidade;
  */
 public class Complexidade_Ciclomática {
 
-//    void receive(Object object) {
-//        if (object instanceof ObjectTypeA) {
-//            doSomethingA();
-//        } else {
-//            if (object instanceof ObjectTypeB) {
-//                doSomethingB();
-//            } else {
-//                if (object instanceof ObjectTypeC) {
-//                    doSomethingC();
-//                } else {
-//                    if (object instanceof ObjectTypeD) {
-//                        doSomethingD();
-//                    } else {
-//                        // etc...
-//                    }
-//                }
-//            }
-//        }
-//    }
+    String texto = "Ola Mundo";
 
+    public static void main(String[] args) {
+
+        String hey = "Oi";
+        Complexidade_Ciclomática exemplo = new Complexidade_Ciclomática();
+
+        exemplo.cyclomatic();
+    }
+
+    public void cyclomatic() {
+        if (texto == null) {
+            olaMundoA();
+        } else {
+            if (texto.equals("Ola mundos")) {
+                olaMundoB();
+            } else {
+                if (texto.equals(texto.getBytes())) {
+                    olaMundoC();
+                } else {
+                    if (texto != null) {
+                        olaMundoD();
+                    } else {
+                        System.out.println("Ola mundo else");
+                    }
+                }
+            }
+        }
+    }
+
+    public void olaMundoA() {System.out.println("Ola Mundo A");}
+    public void olaMundoB() {System.out.println("Ola Mundo B");}
+    public void olaMundoC() {System.out.println("Ola Mundo C");}
+    public void olaMundoD() {System.out.println("Ola Mundo D");}
 }
