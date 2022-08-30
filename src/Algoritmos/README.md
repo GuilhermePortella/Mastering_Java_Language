@@ -3,6 +3,7 @@
 <h2>Sumario</h2> 
 
    - EstruturaDados
+   - Permutacao
    - Grafos
    - Logica
    - Ordenacao
