@@ -21,7 +21,7 @@ git clone https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Ja
  
 # Conceitos Importantes 
   - [Complexidade Ciclomática](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Algoritmos/Complexidade/Ciclom%C3%A1tica)
-  - Complexidade Cognitiva
+  - [Complexidade Cognitiva](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Algoritmos/Complexidade/Cognitiva)
   - Tolerância a Falhas
   - Checagem de Integridade
   - Redundância Modular Tripla
@@ -29,8 +29,8 @@ git clone https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Ja
  
 # Sumário - Java para Iniciantes Herbert Schildt
  
-  - Capitulo 1 
-  - Capitulo 2
+  - [Capitulo 1 - Fundamentos](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo_1) 
+  - [Capitulo 2 - Introdução a tipos de dados e operadores](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo_2)
   - Capitulo 3 
   - Capitulo 4
   - Capitulo 5 
