@@ -36,7 +36,7 @@ git clone https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Ja
   - Redundância Modular Tripla
   - Mirror
  
-# Sumário - Java para Iniciantes Herbert Schildt
+# Sumário - Java para Iniciantes - Herbert Schildt
  
   - [Capitulo 1 - Fundamentos](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo_1) 
   - [Capitulo 2 - Introdução a tipos de dados e operadores](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo_2)
