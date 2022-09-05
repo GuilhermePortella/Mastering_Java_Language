@@ -1,1 +1,3 @@
-<h1>Readme capítulo 10</h1>
+<h3>Capítulo 10</h3>
+
+# Usando I/O
