@@ -50,8 +50,8 @@ git clone https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Ja
   - [Capitulo 10 - Usando I/O](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo__10)
   - [Capitulo 11 - Programação com varias Threads](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo__11)
   - [Capitulo 12 - Enumeração, Autoboxing, Importação estatica e anotações]()
-  - [Capitulo 13](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo__13)
-  - [Capitulo 14](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo__14)
+  - [Capitulo 13 - Tipos Genéricos](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo__13)
+  - [Capitulo 14 - Expressões Lambda e referências de Métodos](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo__14)
   - [Algoritmos](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Algoritmos)
   - [Paralelismo](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Paralelismo)
   
