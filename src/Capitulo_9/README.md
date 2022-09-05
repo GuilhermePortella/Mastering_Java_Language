@@ -1,1 +1,3 @@
-<h1>Readme capítulo 9</h1>
+<h3>Capítulo 9</h3>
+
+# Tratamentos de exceções
