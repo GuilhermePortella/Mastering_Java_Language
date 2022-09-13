@@ -106,6 +106,7 @@ public class Expressoes_Lambda {
 
         System.out.println(list.indexOf("Sheldon")); //imprime a posicao do elemento desejado
         System.out.println(list.indexOf("Amy Ferrah")); //imprime a posicao do elemento desejado
+
         System.out.println("--");
 
                               //converte para lambda    //funcao          //retorna para tipo lista
