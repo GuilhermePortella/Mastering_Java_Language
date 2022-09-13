@@ -1,11 +1,12 @@
-package Paralelismo;
+package Conceitos_importantes;
 
 /**
  *
  * @author Guilherme
  */
-public class UsandoThreads extends Thread {
+public class UsandoThreads {
 
+    
     private final long valorInicial;
     private final long valorFinal;
     private long total = 0;
@@ -19,7 +20,6 @@ public class UsandoThreads extends Thread {
         return total;
     }
 
-    @Override
     public void run() {
         for (long i = valorInicial; i <= valorFinal; i++) {
             total += i;
