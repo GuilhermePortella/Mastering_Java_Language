@@ -7,7 +7,7 @@ package Capitulo_2_Introdução_a_Tipos_de_Dados_e_operadores;
  * de um raio cujo o som leve
  * 7,2 segundos para alcança-lo.
  */
-public class Sound {
+public class CalculationLightningStrike {
     public static void main(String args []){
         double dist;
         

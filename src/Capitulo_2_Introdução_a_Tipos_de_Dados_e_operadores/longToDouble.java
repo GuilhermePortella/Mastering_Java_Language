@@ -6,7 +6,7 @@ package Capitulo_2_Introdução_a_Tipos_de_Dados_e_operadores;
  * 
  * Demonstra a conversão automatica de long para doble
  */
-public class LtoD {
+public class longToDouble {
     public static void main(String args[]){
         long L;
         double D;

@@ -4,7 +4,7 @@ package Capitulo_2_Introdução_a_Tipos_de_Dados_e_operadores;
  *
  * @author Guilherme
  */
-public class BooleDemo {
+public class BooleanDemo {
     public static void main(String args[]){
         boolean b;
         
