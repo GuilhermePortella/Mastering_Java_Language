@@ -2,7 +2,7 @@ package Capitulo_1_Fundamentos;
 /*
 Este e um Programa que converte galoes em litros.
 */
-public class GalToLit {
+public class GallonsToLiters {
     public static void main(String args[]){
     double gallons;//contem o numero de galoes
     double liters;//contem a conversao para litros 

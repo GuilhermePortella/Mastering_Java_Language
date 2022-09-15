@@ -5,7 +5,7 @@ package Capitulo_2_Introdução_a_Tipos_de_Dados_e_operadores;
  * 
  * Tente isto 2-2: uma tabela-verdade para os operadores lógicos.
  */
-public class LogicalOpTable {
+public class LogicalOperationsTable {
     public static void main(String args[]){
         boolean p, q;
         
