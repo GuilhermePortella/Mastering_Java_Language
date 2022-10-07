@@ -25,6 +25,16 @@ git clone https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Ja
  
  ---------------------
  
+# Como preparar o ambiente para programação com Java
+
+###  Independentemente do uso do Java SE ou do Java EE, as etapas de pós-instalação seguir devem ser seguidas.
+[Instalação do java](https://www.oracle.com/java/technologies/downloads/)
+ 
+ Apos a instalação deve ser criado as variaveis de ambiente: 
+ 
+ A variável de ambiente é chamada JAVA_HOME e necessariamente deve apontar para o Java SE instalado. Coloque %JAVA_HOME%\bin no início da variável de ambiente PATH.
+ (contínuo outra hora ....)
+ 
 # Introdução a ciencias da computação com Java
   - [ciencias da computação](https://github.com/GuilhermePortella/IntroducaoCienciasComputacao)
  
