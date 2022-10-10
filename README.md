@@ -30,7 +30,7 @@ git clone https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Ja
  4 - Digite: java aquivo.java para execultar o arquivo 
 ~~~
  
- Duvida ou sugestão estou a disposição.
+### Duvida ou sugestão estou a disposição. 	:vulcan_salute:
  
  
  ---------------------
