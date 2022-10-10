@@ -38,15 +38,15 @@ git clone https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Ja
 
  
 # Introdução a ciencias da computação com Java
-  - [ciencias da computação](https://github.com/GuilhermePortella/IntroducaoCienciasComputacao)
+  - [Ciencias da Computação](https://github.com/GuilhermePortella/IntroducaoCienciasComputacao)
  
 # Conceitos Importantes 
   - [Complexidade Ciclomática](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Algoritmos/Complexidade/Ciclom%C3%A1tica)
   - [Complexidade Cognitiva](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Algoritmos/Complexidade/Cognitiva)
-  - Tolerância a Falhas
-  - Checagem de Integridade
-  - Redundância Modular Tripla
-  - Mirror
+  - [Tolerância a Falhas]()
+  - [Checagem de Integridade]()
+  - [Redundância Modular Tripla]()
+  - [Mirror]()
  
 # Sumário - Java para Iniciantes - Herbert Schildt
  
@@ -73,6 +73,6 @@ git clone https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Ja
   
   # Sumário - Java Como Programar 10ª Ed - Paul Deitel
   
-  - [Resolução de problemas]()
-  - [Resolução de desafios]()
-  - [Conceitos apresentados no livro]()
+  - [Resolução de Problemas]()
+  - [Resolução de Desafios]()
+  - [Conceitos Apresentados no Livro]()
