@@ -3,8 +3,18 @@
 A linguagem Java é uma das linguagem mais completas e robustas disponíveis hoje, com milhões de horas/homem no desenvolvimento e aperfeiçoamento de seus recursos, hoje  conta com uma vasta lista de frameworks e bibliotecas para ajudar no desenvolvimento desde de seu aplicativo de dispositivo móvel a sites ou aplicativos de computador, nesse repositório você irá encontrar exemplos de vários conceitos para te ajudar a começar a entender e programar nessa linguagem, ou até mesmo em eventuais dúvidas sobre algum tema, aqui também vou deixar diversos conceitos que aprendi e estou aprendendo na faculdade de ciências da computação, como complexidade e algoritmos desde de ordenações a teoria de grafos, todos com exemplos em código e teorias escrita nos README das pastas em que o código estiver,  dê uma olhada uma abaixo para um overview.
 
 
+# Como preparar o ambiente para programação com Java
 
+###  Independentemente do uso do Java SE ou do Java EE, as etapas de pós-instalação seguir devem ser seguidas.
+[Instalação do java](https://www.oracle.com/java/technologies/downloads/)
+ 
+ #### Apos a instalação deve ser criado as variaveis de ambiente: 
+ 
+ A variável de ambiente é chamada JAVA_HOME e necessariamente deve apontar para o Java SE instalado. Coloque %JAVA_HOME%\bin no início da variável de ambiente PATH.
+ (contínuo outra hora ....)
 
+ ---------------------
+ ## Sobre o projeto
 
 - Os executáveis dos codigos estão na pasta "src/Capitulo_1, 2, 3 ...", sendo esses exemplos conceitos basicos da linguagem, também deixo alguns algoritmos dentre esses exemplos.
 - Para ter os codigos e exemplos em seu computador basta fazer o clone do projeto com:     
@@ -25,15 +35,7 @@ git clone https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Ja
  
  ---------------------
  
-# Como preparar o ambiente para programação com Java
 
-###  Independentemente do uso do Java SE ou do Java EE, as etapas de pós-instalação seguir devem ser seguidas.
-[Instalação do java](https://www.oracle.com/java/technologies/downloads/)
- 
- #### Apos a instalação deve ser criado as variaveis de ambiente: 
- 
- A variável de ambiente é chamada JAVA_HOME e necessariamente deve apontar para o Java SE instalado. Coloque %JAVA_HOME%\bin no início da variável de ambiente PATH.
- (contínuo outra hora ....)
  
 # Introdução a ciencias da computação com Java
   - [ciencias da computação](https://github.com/GuilhermePortella/IntroducaoCienciasComputacao)
