@@ -46,7 +46,7 @@ git clone https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Ja
   - [Tolerância a Falhas]()
   - [Checagem de Integridade]()
   - [Redundância Modular Tripla]()
-  - [Mirror]()
+  - [Mirror](https://pt.wikipedia.org/wiki/Mirror_(computa%C3%A7%C3%A3o))
  
 # Sumário - Java para Iniciantes - Herbert Schildt
  
