@@ -47,7 +47,10 @@ git clone https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Ja
   - [Checagem de Integridade](https://pt.wikipedia.org/wiki/Checagem_de_integridade)
   - [Redundância Modular Tripla](https://pt.wikipedia.org/wiki/Redund%C3%A2ncia_modular_tripla)
   - [Mirror](https://pt.wikipedia.org/wiki/Mirror_(computa%C3%A7%C3%A3o))
- 
+
+
+![](https://i.imgur.com/waxVImv.png)
+
 # Sumário - Java para Iniciantes - Herbert Schildt
  
   - [Capitulo 1 - Fundamentos](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo_1_Fundamentos) 
@@ -69,7 +72,9 @@ git clone https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Ja
   - [Capitulo 17 - Introdução a JavaFX](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo_17_Introducao_a_JavaFX)
   - [Algoritmos](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Algoritmos)
   - [Paralelismo](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Paralelismo)
-  
+
+
+ ![](https://i.imgur.com/waxVImv.png)
   
   # Sumário - Java Como Programar 10ª Ed - Paul Deitel
   
