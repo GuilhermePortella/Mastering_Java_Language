@@ -13,7 +13,7 @@ A linguagem Java é uma das linguagem mais completas e robustas disponíveis hoj
  A variável de ambiente é chamada JAVA_HOME e necessariamente deve apontar para o Java SE instalado. Coloque %JAVA_HOME%\bin no início da variável de ambiente PATH.
  (contínuo outra hora ....)
 
- ---------------------
+![](https://i.imgur.com/waxVImv.png)
  ## Sobre o projeto
 
 - Os executáveis dos codigos estão na pasta "src/Capitulo_1, 2, 3 ...", sendo esses exemplos conceitos basicos da linguagem, também deixo alguns algoritmos dentre esses exemplos.
@@ -33,7 +33,7 @@ git clone https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Ja
 ### Duvida ou sugestão estou a disposição. 	:vulcan_salute:
  
  
- ---------------------
+![](https://i.imgur.com/waxVImv.png)
  
 
  
