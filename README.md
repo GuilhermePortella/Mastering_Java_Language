@@ -40,6 +40,10 @@ git clone https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Ja
 # Introdução a ciencias da computação com Java
   - [Ciencias da Computação](https://github.com/GuilhermePortella/IntroducaoCienciasComputacao)
  
+ 
+ ![](https://i.imgur.com/waxVImv.png)
+ 
+ 
 # Conceitos Importantes 
   - [Complexidade Ciclomática](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Algoritmos/Complexidade/Ciclom%C3%A1tica)
   - [Complexidade Cognitiva](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Algoritmos/Complexidade/Cognitiva)
