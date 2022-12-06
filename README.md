@@ -10,7 +10,10 @@ A linguagem Java é uma das linguagem mais completas e robustas disponíveis hoj
  
  #### Apos a instalação deve ser criado as variaveis de ambiente: 
  
- A variável de ambiente é chamada JAVA_HOME e necessariamente deve apontar para o Java SE instalado. Coloque %JAVA_HOME%\bin no início da variável de ambiente PATH.
+ A variável de ambiente é chamada JAVA_HOME e necessariamente deve apontar para o Java SE instalado. 
+ ~~~
+ Coloque %JAVA_HOME%\bin no início da variável de ambiente PATH.
+ ~~~
  (contínuo outra hora ....)
 
 ![](https://i.imgur.com/waxVImv.png)
