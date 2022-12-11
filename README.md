@@ -13,7 +13,8 @@ A linguagem Java é uma das linguagem mais completas e robustas disponíveis hoj
  A variável de ambiente é chamada JAVA_HOME e necessariamente deve apontar para o Java SE instalado. 
  ~~~
  No CMD digite:
- setx -m JAVA_HOME "C:\Program Files\Java\jdk19" OBS: substitua o caminho para o caminho que voce baixou o java em sua maquina
+ setx -m JAVA_HOME "C:\Program Files\Java\jdk19" 
+  - OBS: substitua o caminho para o caminho que voce baixou o java em sua maquina
  
  Coloque %JAVA_HOME%\bin no início da variável de ambiente PATH.
  ~~~
