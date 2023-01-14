@@ -32,8 +32,6 @@ quando o algoritmo volta uma etapa e tenta outro número para uma célula.
 É importante notar que essa implementação do algoritmo de backtracking é uma das muitas formas de se 
 resolver um Sudoku, e pode haver outras formas mais eficientes e otimizadas de se resolver o problema.
 
-Eu realmente peço desculpas pelo erro e espero que essa resposta possa esclarecer sua dúvida.
-
 
 
 
