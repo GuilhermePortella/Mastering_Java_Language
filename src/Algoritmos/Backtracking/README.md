@@ -1,4 +1,6 @@
-# Backtracking
+## Backtracking
+
+![](https://i.imgur.com/waxVImv.png)
 
 
 O código acima é uma implementação em Java do algoritmo de backtracking para resolver jogos de Sudoku. 
@@ -34,4 +36,4 @@ resolver um Sudoku, e pode haver outras formas mais eficientes e otimizadas de s
 
 
 
-
+![](https://i.imgur.com/waxVImv.png)
