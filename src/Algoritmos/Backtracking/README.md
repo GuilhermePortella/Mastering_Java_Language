@@ -1,4 +1,6 @@
-# Backtracking
+## Backtracking
+
+![](https://i.imgur.com/waxVImv.png)
 
 
 O código acima é uma implementação em Java do algoritmo de backtracking para resolver jogos de Sudoku. 
@@ -29,9 +31,7 @@ coluna e quadrado 3x3, permitindo que o método isSafe() possa verificar se um n
 e evitando que ele seja usado novamente. A função mark() é chamada sempre que um número é colocado na grade e 
 quando o algoritmo volta uma etapa e tenta outro número para uma célula.
 
-É importante notar que essa implementação do algoritmo de backtracking é uma das muitas formas de se 
-resolver um Sudoku, e pode haver outras formas mais eficientes e otimizadas de se resolver o problema.
 
+![](https://i.imgur.com/waxVImv.png)
 
-
-
+- [N Queen Problem | Backtracking-3](https://www.geeksforgeeks.org/n-queen-problem-backtracking-3/)
