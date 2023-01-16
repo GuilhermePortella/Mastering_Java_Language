@@ -34,4 +34,6 @@ quando o algoritmo volta uma etapa e tenta outro número para uma célula.
 
 ![](https://i.imgur.com/waxVImv.png)
 
+- [What is Backtracking Algorithm? Types, Examples & its Application](https://www.simplilearn.com/tutorials/data-structure-tutorial/backtracking-algorithm#:~:text=Backtracking%20is%20a%20general%20algorithm,completed%20to%20a%20reasonable%20solution.)
+- [O que é um algoritmo Backtracking?](https://pt.stackoverflow.com/questions/103184/o-que-%C3%A9-um-algoritmo-backtracking)
 - [N Queen Problem | Backtracking-3](https://www.geeksforgeeks.org/n-queen-problem-backtracking-3/)
