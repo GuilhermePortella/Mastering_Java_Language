@@ -26,7 +26,7 @@ A linguagem Java é uma das linguagem mais completas e robustas disponíveis hoj
 - Os executáveis dos codigos estão na pasta "src/Capitulo_1, 2, 3 ...", sendo esses exemplos conceitos basicos da linguagem, também deixo alguns algoritmos dentre esses exemplos.
 - Para ter os codigos e exemplos em seu computador basta fazer o clone do projeto com:     
 ~~~ 
-git clone https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java.git
+git clone https://github.com/GuilhermePortella/Mastering_Java_Language.git
 ~~~
 
 - Para executar utilize uma IDE como netbeans ou eclipse ou execute diretamente no terminal da seguinte forma:
