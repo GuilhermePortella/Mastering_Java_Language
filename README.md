@@ -1,4 +1,4 @@
-# Conceitosda Linguagem Java
+# Conceitos da Linguagem Java
 
 A linguagem Java é uma das linguagem mais completas e robustas disponíveis hoje, com milhões de horas/homem no desenvolvimento e aperfeiçoamento de seus recursos, hoje  conta com uma vasta lista de frameworks e bibliotecas para ajudar no desenvolvimento desde de seu aplicativo de dispositivo móvel a sites ou aplicativos de computador, nesse repositório você irá encontrar exemplos de vários conceitos para te ajudar a começar a entender e programar nessa linguagem, ou até mesmo em eventuais dúvidas sobre algum tema, aqui também vou deixar diversos conceitos que aprendi e estou aprendendo na faculdade de ciências da computação, como complexidade e algoritmos desde de ordenações a teoria de grafos, todos com exemplos em código e teorias escrita nos README das pastas em que o código estiver,  dê uma olhada uma abaixo para um overview.
 
