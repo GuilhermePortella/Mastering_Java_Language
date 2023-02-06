@@ -3,6 +3,13 @@
 A linguagem Java é uma das linguagem mais completas e robustas disponíveis hoje, com milhões de horas/homem no desenvolvimento e aperfeiçoamento de seus recursos, hoje  conta com uma vasta lista de frameworks e bibliotecas para ajudar no desenvolvimento desde de seu aplicativo de dispositivo móvel a sites ou aplicativos de computador, nesse repositório você irá encontrar exemplos de vários conceitos para te ajudar a começar a entender e programar nessa linguagem, ou até mesmo em eventuais dúvidas sobre algum tema, aqui também vou deixar diversos conceitos que aprendi e estou aprendendo na faculdade de ciências da computação, como complexidade e algoritmos desde de ordenações a teoria de grafos, todos com exemplos em código e teorias escrita nos README das pastas em que o código estiver,  dê uma olhada uma abaixo para um overview.
 
 
+
+(Esboço)...
+
+A linguagem Java é uma das linguagens mais completas e robustas disponíveis hoje altamente popular e utilizada por muitas pessoas e aplicações em larga escala desde pequenos projetos a grandes projetos empresariais. Conhecida por ser orientada a objetos e ser extremamente robusta, contando com milhões de horas/homem no desenvolvimento e aprimoramento de seus recursos. Fundada e desenvolvida inicialmente pela empresa Sun Microsystems em 1995, posteriormente vendida para Oracle, atual mantenedora da linguagem.
+
+Fim ~~~~
+
 # Como preparar o ambiente para programação com Java
 
 ###  Independentemente do uso do Java SE ou do Java EE, as etapas de pós-instalação devem ser seguidas.
