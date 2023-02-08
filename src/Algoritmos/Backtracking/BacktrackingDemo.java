@@ -72,7 +72,8 @@ public class BacktrackingDemo {
         return false;
     }
 
-    static boolean isSafe(int[][] grid, int row, int col, int num) {
+    static boolean isSafe(int row, int col, int num) {
+        int[][] grid = null;
 
         for (int x = 0; x <= 8; x++) {
             if (grid[row][x] == num) {
@@ -98,10 +99,13 @@ public class BacktrackingDemo {
         return true;
     }
 
-    private void mark(int row, int col, int num, boolean mark, boolean[][] rows, boolean[][] cols, boolean[][] squares) {
+    private void mark(int row, int col, int num, boolean mark) {
         int index = (row / 3) * 3 + col / 3;
+        boolean[][] rows = null;
         rows[row][num] = mark;
+        boolean[][] cols = null;
         cols[col][num] = mark;
+        boolean[][] squares = null;
         squares[index][num] = mark;
     }
 
