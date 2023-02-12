@@ -10,12 +10,16 @@ A linguagem Java é uma das linguagens mais completas e robustas disponíveis ho
 
 Fim ~~~~
 
+![](https://i.imgur.com/waxVImv.png)
+
 # Como preparar o ambiente para programação com Java
 
 ###  Independentemente do uso do Java SE ou do Java EE, as etapas de pós-instalação devem ser seguidas.
 [Download do Instalador Java](https://www.oracle.com/java/technologies/downloads/)
- 
- #### Apos a instalação deve ser criado as variaveis de ambiente: 
+
+Executar o arquivo de instalação do JDK e seguir as instruções na tela. Normalmente não é necessário fazer nada além de next para próxima etapa até finalizar.
+
+ #### Após a instalação deve ser criado as variáveis de ambiente em qualquer sistema que você esteja isso será necessário: 
  
  A variável de ambiente é chamada JAVA_HOME e necessariamente deve apontar para o Java SE instalado. 
  ~~~
