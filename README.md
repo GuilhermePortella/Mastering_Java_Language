@@ -2,13 +2,15 @@
 
 A linguagem Java é uma das linguagem mais completas e robustas disponíveis hoje, com milhões de horas/homem no desenvolvimento e aperfeiçoamento de seus recursos, hoje  conta com uma vasta lista de frameworks e bibliotecas para ajudar no desenvolvimento desde de seu aplicativo de dispositivo móvel a sites ou aplicativos de computador, nesse repositório você irá encontrar exemplos de vários conceitos para te ajudar a começar a entender e programar nessa linguagem, ou até mesmo em eventuais dúvidas sobre algum tema, aqui também vou deixar diversos conceitos que aprendi e estou aprendendo na faculdade de ciências da computação, como complexidade e algoritmos desde de ordenações a teoria de grafos, todos com exemplos em código e teorias escrita nos README das pastas em que o código estiver,  dê uma olhada uma abaixo para um overview.
 
+### Bem vindo ao maravilhoso mundo da programação!
+Se você está pensando em aprender a programar, sites e sistemas, mas não sabe por onde começar, não se preocupe! Eu tenho uma recomendação infalível: aprenda Java! A linguagem de programação é tão popular que tem até nome de café. Mas por que Java é a melhor linguagem para iniciantes? Deixe-me convencê-lo.
 
+- Em primeiro lugar, a sintaxe do java é fácil e intuitiva de aprender, o que vai facilitar muito sua vida caso se depare com algum erro de sintaxe, as regras são simples e bem organizadas, vai te ajudar até com o aprendizado gramatical no inglês. 
+- Em segundo lugar, java e uma linguagem extremamente popular, no dia que estou escrevendo esse texto ela conta com mais de 2 milhões de repositórios públicos no github e mais de 10 milhões de issues resolvidas, isso sem contar com os artigos, vídeos e stackoverflow, isso além de te ajudar em eventuais erros pode te ajudar a construir um senso de comunidade.
+- Em terceiro lugar, java não demonstra sinais de desaceleração, eu mesmo estou trabalhando em um projeto que utiliza Java EE e está apenas no início. A tecnologia java e base de muitos softwares e aplicativos mais populares do mundo, estando presente até em sistemas operacionais, então você poderá trabalhar em serviços web, aplicativo mobile, em sistemas operacionais, qualquer área que gostar, um conhecimento valioso que pode te ajudar muito em seu primeiro emprego de programador. 
+- Finalmente, Java é uma das melhores linguagens de programação para aprender o desenvolvimento backend. Se você pensa em criar aplicativos robustos e escaláveis, essa é uma ótima porta de entrada nesse mundo. Os recursos de segurança e escalabilidade e capacidade de integrar com outras tecnologias como computação cloud, banco de dados tradicionais, tornam java uma escolha popular para o desenvolvimento backend.
 
-(Esboço)...
-
-A linguagem Java é uma das linguagens mais completas e robustas disponíveis hoje altamente popular e utilizada por muitas pessoas e aplicações em larga escala desde pequenos projetos a grandes projetos empresariais. Conhecida por ser orientada a objetos e ser extremamente robusta, contando com milhões de horas/homem no desenvolvimento e aprimoramento de seus recursos. Fundada e desenvolvida inicialmente pela empresa Sun Microsystems em 1995, posteriormente vendida para Oracle, atual mantenedora da linguagem.
-
-Fim ~~~~
+Então, não espere mais! Comece a aprender java hoje mesmo, e embarque no maravilhoso e mágico mundo da programação. É uma habilidade valiosa, divertida e que você não irá se arrepender de aprender, se precisar de ajuda conte comigo ou uma das muitas comunidades disponíveis que estão prontas para te ajudar.
 
 ![](https://i.imgur.com/waxVImv.png)
 
