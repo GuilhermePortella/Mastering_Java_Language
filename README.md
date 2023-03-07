@@ -19,19 +19,41 @@ Então, não espere mais! Comece a aprender java hoje mesmo, e embarque no marav
 ###  Independentemente do uso do Java SE ou do Java EE, as etapas de pós-instalação devem ser seguidas.
 [Download do Instalador Java](https://www.oracle.com/java/technologies/downloads/)
 
-Executar o arquivo de instalação do JDK e seguir as instruções na tela. Normalmente não é necessário fazer nada além de next para próxima etapa até finalizar.
+Após o download, execute o instalador do JDK clicando duas vezes no arquivo que foi baixado.
+
+Na tela de boas-vindas do instalador, clique em "Next" para prosseguir.
+
+Na próxima tela, aceite os termos de licença e clique em "Next".
+
+Na tela seguinte, selecione a pasta de instalação. Você pode optar por manter o caminho padrão ou escolher uma pasta diferente. Clique em "Next" para continuar.
+
+Na tela de seleção de componentes, selecione todas as opções disponíveis e clique em "Next".
+
+Na próxima tela, selecione "Create a desktop icon" e clique em "Next".
+
+Na tela de resumo, verifique se as configurações estão corretas e clique em "Install" para iniciar a instalação.
+
+Aguarde o término da instalação. Quando ela estiver concluída, clique em "Finish" para finalizar.
+
+Para verificar se o Java foi instalado corretamente, abra o Prompt de Comando e digite "java -version". Deverá ser exibida a versão do Java instalada.
+
 
  #### Após a instalação deve ser criado as variáveis de ambiente em qualquer sistema que você esteja isso será necessário: 
  
  A variável de ambiente é chamada JAVA_HOME e necessariamente deve apontar para o Java SE instalado. 
  ~~~
  No CMD digite:
- setx -m JAVA_HOME "C:\Program Files\Java\jdk19" 
-  - OBS: substitua o caminho para o caminho que voce baixou o java em sua maquina
+ setx -m JAVA_HOME "C:\Program Files\Java\jdk19"
  
- Coloque %JAVA_HOME%\bin no início da variável de ambiente PATH.
+  - OBS: substitua o caminho "C:\Program Files\Java\jdk19" para o caminho que voce baixou o java em sua maquina.
  ~~~
- (contínuo outra hora ....)
+ 
+Para adicionar o diretório bin do JDK à variável de ambiente PATH, abra o Painel de Controle, clique em "Sistema", selecione "Configurações avançadas do sistema" e clique em "Variáveis de ambiente". Na seção "Variáveis do sistema", selecione a variável "Path" e clique em "Editar". Adicione "%JAVA_HOME%\bin":
+~~~
+Coloque %JAVA_HOME%\bin;
+~~~
+no início da lista de valores separados por ponto-e-vírgula (;). Clique em "OK" para salvar as alterações.
+
 
 ![](https://i.imgur.com/waxVImv.png)
  ## Sobre o projeto
