@@ -50,7 +50,7 @@ Para verificar se o Java foi instalado corretamente, abra o Prompt de Comando e 
  
 Para adicionar o diretório bin do JDK à variável de ambiente PATH, abra o Painel de Controle, clique em "Sistema", selecione "Configurações avançadas do sistema" e clique em "Variáveis de ambiente". Na seção "Variáveis do sistema", selecione a variável "Path" e clique em "Editar". Adicione "%JAVA_HOME%\bin":
 ~~~
-Coloque %JAVA_HOME%\bin;
+%JAVA_HOME%\bin;
 ~~~
 no início da lista de valores separados por ponto-e-vírgula (;). Clique em "OK" para salvar as alterações.
 
