@@ -17,7 +17,7 @@ Então, não espere mais! Comece a aprender java hoje mesmo, e embarque no marav
 # Como preparar o ambiente para programação com Java
 
 ###  Independentemente do uso do Java SE ou do Java EE, as etapas de pós-instalação devem ser seguidas.
-[Download do Instalador Java](https://www.oracle.com/java/technologies/downloads/)
+[Download do Instalador Java](https://www.oracle.com/java/technologies/downloads/){:target="_blank"}
 
 Após o download, execute o instalador do JDK clicando duas vezes no arquivo que foi baixado.
 
@@ -50,7 +50,7 @@ Para verificar se o Java foi instalado corretamente, abra o Prompt de Comando e 
  
 Para adicionar o diretório bin do JDK à variável de ambiente PATH, abra o Painel de Controle, clique em "Sistema", selecione "Configurações avançadas do sistema" e clique em "Variáveis de ambiente". Na seção "Variáveis do sistema", selecione a variável "Path" e clique em "Editar". Adicione "%JAVA_HOME%\bin":
 ~~~
-Coloque %JAVA_HOME%\bin;
+%JAVA_HOME%\bin;
 ~~~
 no início da lista de valores separados por ponto-e-vírgula (;). Clique em "OK" para salvar as alterações.
 
