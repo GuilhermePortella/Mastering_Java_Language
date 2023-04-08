@@ -17,7 +17,7 @@ Então, não espere mais! Comece a aprender java hoje mesmo, e embarque no marav
 # Como preparar o ambiente para programação com Java
 
 ###  Independentemente do uso do Java SE ou do Java EE, as etapas de pós-instalação devem ser seguidas.
-[Download do Instalador Java](https://www.oracle.com/java/technologies/downloads/){:target="_blank"}
+[Download do Instalador Java](https://www.oracle.com/java/technologies/downloads/)
 
 Após o download, execute o instalador do JDK clicando duas vezes no arquivo que foi baixado.
 
