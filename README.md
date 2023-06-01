@@ -10,7 +10,7 @@ Se você está pensando em aprender a programar, sites e sistemas, mas não sabe
 - Em terceiro lugar, java não demonstra sinais de desaceleração, eu mesmo estou trabalhando em um projeto que utiliza Java EE e está apenas no início. A tecnologia java e base de muitos softwares e aplicativos mais populares do mundo, estando presente até em sistemas operacionais, então você poderá trabalhar em serviços web, aplicativo mobile, em sistemas operacionais, qualquer área que gostar, um conhecimento valioso que pode te ajudar muito em seu primeiro emprego de programador. 
 - Finalmente, Java é uma das melhores linguagens de programação para aprender o desenvolvimento backend. Se você pensa em criar aplicativos robustos e escaláveis, essa é uma ótima porta de entrada nesse mundo. Os recursos de segurança e escalabilidade e capacidade de integrar com outras tecnologias como computação cloud, banco de dados tradicionais, tornam java uma escolha popular para o desenvolvimento backend.
 
-Então, não espere mais! Comece a aprender java hoje mesmo, e embarque no maravilhoso e mágico mundo da programação. É uma habilidade valiosa, divertida e que você não irá se arrepender de aprender, se precisar de ajuda conte comigo ou uma das muitas comunidades disponíveis que estão prontas para te ajudar.
+Se precisar de ajuda conte comigo ou uma das muitas comunidades disponíveis que estão prontas para te ajudar.
 
 ![](https://i.imgur.com/waxVImv.png)
 
