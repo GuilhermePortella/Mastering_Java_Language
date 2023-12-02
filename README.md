@@ -75,7 +75,7 @@ git clone https://github.com/GuilhermePortella/Mastering_Java_Language.git
  4 - Digite: java aquivo.java para execultar o arquivo 
 ~~~
  
-### Duvida ou sugestão estou a disposição. 	:vulcan_salute:
+### Duvida ou sugestão estou a disposição.  🖖
  
  
 ![](https://i.imgur.com/waxVImv.png)
