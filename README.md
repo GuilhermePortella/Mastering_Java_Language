@@ -14,11 +14,12 @@ Se você está pensando em aprender a programar, sites e sistemas, mas não sabe
 Se precisar de ajuda conte comigo ou uma das muitas comunidades disponíveis que estão prontas para te ajudar.
 
 ![](https://i.imgur.com/waxVImv.png)
-
+ 
 # Como preparar o ambiente para programação com Java
 
 ###  Independentemente do uso do Java SE ou do Java EE, as etapas de pós-instalação devem ser seguidas.
-[Download do Instalador Java](https://www.oracle.com/java/technologies/downloads/)
+[Download do Instalador Java - (Java 21 já disponível)](https://www.oracle.com/java/technologies/downloads/)
+####  * Lembre-se de baixar o Instalador x64, assim as etapas serão mais intuitivas.
 
 Após o download, execute o instalador do JDK clicando duas vezes no arquivo que foi baixado.
 
@@ -46,7 +47,7 @@ Para verificar se o Java foi instalado corretamente, abra o Prompt de Comando e 
  No CMD digite:
  setx -m JAVA_HOME "C:\Program Files\Java\jdk19"
  
-  - OBS: substitua o caminho "C:\Program Files\Java\jdk19" para o caminho que voce baixou o java em sua maquina.
+  - OBS: substitua o caminho "C:\Program Files\Java\jdk19" para o caminho que estiver os arquivos java em sua maquina, não se esqueça também de deixar adequado a versão baixada.
  ~~~
  
 Para adicionar o diretório bin do JDK à variável de ambiente PATH, abra o Painel de Controle, clique em "Sistema", selecione "Configurações avançadas do sistema" e clique em "Variáveis de ambiente". Na seção "Variáveis do sistema", selecione a variável "Path" e clique em "Editar". Adicione "%JAVA_HOME%\bin":
@@ -55,6 +56,7 @@ Para adicionar o diretório bin do JDK à variável de ambiente PATH, abra o Pai
 ~~~
 no início da lista de valores separados por ponto-e-vírgula (;). Clique em "OK" para salvar as alterações.
 
+Com isso você já está apto para programar e compilar programas java em sua máquina.
 
 ![](https://i.imgur.com/waxVImv.png)
  ## Sobre o projeto
