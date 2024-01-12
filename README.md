@@ -7,17 +7,19 @@ Se você está pensando em aprender a programar, sites e sistemas, mas não sabe
 
 - Em primeiro lugar, a sintaxe do java é fácil e intuitiva de aprender, o que vai facilitar muito sua vida caso se depare com algum erro de sintaxe, as regras são simples e bem organizadas, vai te ajudar até com o aprendizado gramatical no inglês. 
 - Em segundo lugar, java e uma linguagem extremamente popular, no dia que estou escrevendo esse texto ela conta com mais de 2 milhões de repositórios públicos no github e mais de 10 milhões de issues resolvidas, isso sem contar com os artigos, vídeos e stackoverflow, isso além de te ajudar em eventuais erros pode te ajudar a construir um senso de comunidade.
-- Em terceiro lugar, java não demonstra sinais de desaceleração, eu mesmo estou trabalhando em um projeto que utiliza Java EE e está apenas no início. A tecnologia java e base de muitos softwares e aplicativos mais populares do mundo, estando presente até em sistemas operacionais, então você poderá trabalhar em serviços web, aplicativo mobile, em sistemas operacionais, qualquer área que gostar, um conhecimento valioso que pode te ajudar muito em seu primeiro emprego de programador. 
+- Em terceiro lugar, java não demonstra sinais de desaceleração, eu mesmo estou trabalhando em um projeto que utiliza Java EE e está apenas no início. A tecnologia java e base de muitos softwares e aplicativos mais populares do mundo, estando presente até em sistemas operacionais, então você poderá trabalhar em serviços web, aplicativo mobile, em sistemas operacionais, qualquer área que gostar, um conhecimento valioso que pode te ajudar muito em seu primeiro emprego de programador.
+- Em quarto lugar não poderia deixar de falar no aprendizado orgânico de estrutura de dados, algo que foi bastante fácil para mim que aprendi java como minha primeira linguagem, antes mesmo de conhecer conceitos e técnicas de otimização já as fazia em meu dia a dia de aprendizado com java, depois foi somente refinar os conhecimentos e dar nomes às coisas que já sabia na prática, algoritmos mais difíceis virão com o tempo e pode ter certeza que suas aplicações em java serão um desafio motivador para você, imagina você assumir posições de primeiro lugar em sites de desafios de programação ? Incrível né ? ainda te ajudaria a ser reconhecido na comunidade e a conseguir seu primeiro emprego como desenvolvedor java.
 - Finalmente, Java é uma das melhores linguagens de programação para aprender o desenvolvimento backend. Se você pensa em criar aplicativos robustos e escaláveis, essa é uma ótima porta de entrada nesse mundo. Os recursos de segurança e escalabilidade e capacidade de integrar com outras tecnologias como computação cloud, banco de dados tradicionais, tornam java uma escolha popular para o desenvolvimento backend.
 
 Se precisar de ajuda conte comigo ou uma das muitas comunidades disponíveis que estão prontas para te ajudar.
 
 ![](https://i.imgur.com/waxVImv.png)
-
+ 
 # Como preparar o ambiente para programação com Java
 
 ###  Independentemente do uso do Java SE ou do Java EE, as etapas de pós-instalação devem ser seguidas.
-[Download do Instalador Java](https://www.oracle.com/java/technologies/downloads/)
+[Download do Instalador Java - (Java 21 já disponível)](https://www.oracle.com/java/technologies/downloads/)
+####  * Lembre-se de baixar o Instalador x64, assim as etapas serão mais intuitivas.
 
 Após o download, execute o instalador do JDK clicando duas vezes no arquivo que foi baixado.
 
@@ -45,7 +47,7 @@ Para verificar se o Java foi instalado corretamente, abra o Prompt de Comando e 
  No CMD digite:
  setx -m JAVA_HOME "C:\Program Files\Java\jdk19"
  
-  - OBS: substitua o caminho "C:\Program Files\Java\jdk19" para o caminho que voce baixou o java em sua maquina.
+  - OBS: substitua o caminho "C:\Program Files\Java\jdk19" para o caminho que estiver os arquivos java em sua maquina, não se esqueça também de deixar adequado a versão baixada.
  ~~~
  
 Para adicionar o diretório bin do JDK à variável de ambiente PATH, abra o Painel de Controle, clique em "Sistema", selecione "Configurações avançadas do sistema" e clique em "Variáveis de ambiente". Na seção "Variáveis do sistema", selecione a variável "Path" e clique em "Editar". Adicione "%JAVA_HOME%\bin":
@@ -54,6 +56,7 @@ Para adicionar o diretório bin do JDK à variável de ambiente PATH, abra o Pai
 ~~~
 no início da lista de valores separados por ponto-e-vírgula (;). Clique em "OK" para salvar as alterações.
 
+Com isso você já está apto para programar e compilar programas java em sua máquina.
 
 ![](https://i.imgur.com/waxVImv.png)
  ## Sobre o projeto
@@ -72,7 +75,7 @@ git clone https://github.com/GuilhermePortella/Mastering_Java_Language.git
  4 - Digite: java aquivo.java para execultar o arquivo 
 ~~~
  
-### Duvida ou sugestão estou a disposição. 	:vulcan_salute:
+### Duvida ou sugestão estou a disposição.  🖖
  
  
 ![](https://i.imgur.com/waxVImv.png)
@@ -97,32 +100,32 @@ git clone https://github.com/GuilhermePortella/Mastering_Java_Language.git
 
 ![](https://i.imgur.com/waxVImv.png)
 
-# Sumário - Java para Iniciantes - Herbert Schildt
+# Inicio de tudo em Java
  
-  - [Capitulo 1 - Fundamentos](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo_1_Fundamentos) 
-  - [Capitulo 2 - Introdução a tipos de dados e operadores](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo_2_Introdu%C3%A7%C3%A3o_a_Tipos_de_Dados_e_operadores)
-  - [Capitulo 3 - Instruções de controle de programa](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo_3_Instru%C3%A7%C3%B5es_de_Controle_de_Programa)
-  - [Capitulo 4 - Introdução a classes, objetos e métodos](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo_4_Introducao_a_Classes_Objetos_e_Metodos)
-  - [Capitulo 5 - Mais tipos de dados e operadores](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo_5_Mais_tipos_de_Dados_e_Operadores)
-  - [Capitulo 6 - Verificação minuciosa dos métodos e classes](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo_6_Verificacao_Minuciosa_dos_Metodos_e_Classes)
-  - [Capitulo 7 - Herança](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo_7_Heranca)
-  - [Capitulo 8 - Pacotes e Interfaces](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo_8_Pacotes_e_Interfaces)
-  - [Capitulo 9 - Tratamentos de exceções](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo_9_Tratamentos_de_Excecoes)
-  - [Capitulo 10 - Usando I/O](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo_10_Usando_IO)
-  - [Capitulo 11 - Programação com varias Threads](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo_11_Programacao_com_Varias_Threads)
-  - [Capitulo 12 - Enumeração, Autoboxing, Importação estatica e anotações](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo_12_Enumeracao_Autoboxing_Importacao_estatica_e_anotacoes)
-  - [Capitulo 13 - Tipos Genéricos](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo_13_Tipos_Genericos)
-  - [Capitulo 14 - Expressões Lambda e referências de Métodos](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo_14_Expressoes_Lambda_e_Referencias_de_Metodos)
-  - [Capitulo 15 - Appletes Eventos e Topicos Diversos](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo_15_Applets_Eventos_e_Topicos_Diversos)
-  - [Capitulo 16 - Introdução a Swing](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo_16_Introducao_a_Swing)
-  - [Capitulo 17 - Introdução a JavaFX](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo_17_Introducao_a_JavaFX)
+  - [Fundamentos](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo_1_Fundamentos) 
+  - [Introdução a tipos de dados e operadores](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo_2_Introdu%C3%A7%C3%A3o_a_Tipos_de_Dados_e_operadores)
+  - [Instruções de controle de programa](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo_3_Instru%C3%A7%C3%B5es_de_Controle_de_Programa)
+  - [Introdução a classes, objetos e métodos](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo_4_Introducao_a_Classes_Objetos_e_Metodos)
+  - [Mais tipos de dados e operadores](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo_5_Mais_tipos_de_Dados_e_Operadores)
+  - [Verificação minuciosa dos métodos e classes](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo_6_Verificacao_Minuciosa_dos_Metodos_e_Classes)
+  - [Herança](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo_7_Heranca)
+  - [Pacotes e Interfaces](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo_8_Pacotes_e_Interfaces)
+  - [Tratamentos de exceções](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo_9_Tratamentos_de_Excecoes)
+  - [Usando I/O](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo_10_Usando_IO)
+  - [Programação com varias Threads](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo_11_Programacao_com_Varias_Threads)
+  - [Enumeração, Autoboxing, Importação estatica e anotações](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo_12_Enumeracao_Autoboxing_Importacao_estatica_e_anotacoes)
+  - [Tipos Genéricos](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo_13_Tipos_Genericos)
+  - [Expressões Lambda e referências de Métodos](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo_14_Expressoes_Lambda_e_Referencias_de_Metodos)
+  - [Appletes Eventos e Topicos Diversos](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo_15_Applets_Eventos_e_Topicos_Diversos)
+  - [Introdução a Swing](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo_16_Introducao_a_Swing)
+  - [Introdução a JavaFX](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo_17_Introducao_a_JavaFX)
   - [Algoritmos](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Algoritmos)
   - [Paralelismo](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Paralelismo)
 
 
  ![](https://i.imgur.com/waxVImv.png)
   
-  # Sumário - Java Como Programar 10ª Ed - Paul Deitel
+  # Java Como Programar 10ª Ed - Paul Deitel - Desafios
   
   - [Resolução de Problemas]()
   - [Resolução de Desafios]()
