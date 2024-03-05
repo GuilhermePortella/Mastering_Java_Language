@@ -17,7 +17,7 @@ Se precisar de ajuda conte comigo ou uma das muitas comunidades disponíveis que
  
 # Como preparar o ambiente para programação com Java
 
-> [!IMPORTANT]
+> [!WARNING]
 > #### Independentemente do uso do Java SE ou do Java EE, as etapas de pós-instalação devem ser seguidas.
 
 [Download do Instalador Java - (Java 21 já disponível)](https://www.oracle.com/java/technologies/downloads/)
@@ -43,8 +43,8 @@ Aguarde o término da instalação. Quando ela estiver concluída, clique em "Fi
 
 Para verificar se o Java foi instalado corretamente, abra o Prompt de Comando e digite "java -version". Deverá ser exibida a versão do Java instalada.
 
-
- #### Após a instalação deve ser criado as variáveis de ambiente em qualquer sistema que você esteja isso será necessário: 
+> [!IMPORTANT]
+> #### Após a instalação deve ser criado as variáveis de ambiente em qualquer sistema que você esteja isso será necessário: 
  
  A variável de ambiente é chamada JAVA_HOME e necessariamente deve apontar para o Java SE instalado. 
  ~~~
