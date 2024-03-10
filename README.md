@@ -50,9 +50,10 @@ Para verificar se o Java foi instalado corretamente, abra o Prompt de Comando e 
  ~~~
  No CMD digite:
  setx -m JAVA_HOME "C:\Program Files\Java\jdk19"
- 
-  - OBS: substitua o caminho "C:\Program Files\Java\jdk19" para o caminho que estiver os arquivos java em sua maquina, não se esqueça também de deixar adequado a versão baixada.
  ~~~
+> [!IMPORTANT]
+> ####  substitua o caminho "C:\Program Files\Java\jdk19" para o caminho que estiver os arquivos java em sua maquina, não se esqueça também de deixar adequado a versão baixada. 
+
  
 Para adicionar o diretório bin do JDK à variável de ambiente PATH, abra o Painel de Controle, clique em "Sistema", selecione "Configurações avançadas do sistema" e clique em "Variáveis de ambiente". Na seção "Variáveis do sistema", selecione a variável "Path" e clique em "Editar". Adicione "%JAVA_HOME%\bin":
 ~~~
