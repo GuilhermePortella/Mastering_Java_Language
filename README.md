@@ -47,8 +47,11 @@ Para verificar se o Java foi instalado corretamente, abra o Prompt de Comando e 
 > #### Após a instalação deve ser criado as variáveis de ambiente em qualquer sistema que você esteja isso será necessário: 
  
  A variável de ambiente é chamada JAVA_HOME e necessariamente deve apontar para o Java SE instalado. 
- ~~~
+
+` 
  No CMD digite:
+` 
+ ~~~
  setx -m JAVA_HOME "C:\Program Files\Java\jdk19"
  ~~~
 > [!IMPORTANT]
@@ -73,12 +76,23 @@ git clone https://github.com/GuilhermePortella/Mastering_Java_Language.git
 ~~~
 
 - Para executar utilize uma IDE como netbeans ou eclipse ou execute diretamente no terminal da seguinte forma:
-~~~
+
+
+` 
  1 - Abra seu terminal
+ `
+ 
+ `
  2 - Navegar até pasta do projeto
+ `
+ 
+ `
  3 - Digite: javac arquivo.java (substituindo pelo nome do arquivo que deseja compilar)
+` 
+
+`
  4 - Digite: java aquivo.java para execultar o arquivo 
-~~~
+` 
  
 ### Duvida ou sugestão estou a disposição.  🖖
  
