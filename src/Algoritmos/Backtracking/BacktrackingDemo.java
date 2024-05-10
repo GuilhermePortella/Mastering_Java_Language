@@ -5,8 +5,6 @@
  */
 package Algoritmos.Backtracking;
 
-import com.sun.jersey.spi.inject.Errors;
-
 /**
  *
  * @author Guilherme
