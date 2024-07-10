@@ -106,7 +106,8 @@ git clone https://github.com/GuilhermePortella/Mastering_Java_Language.git
  
  
  ![](https://i.imgur.com/waxVImv.png)
- 
+
+# Curiosidades  
  
 # Conceitos Importantes 
   - [Complexidade Ciclomática](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Algoritmos/Complexidade/Ciclom%C3%A1tica)
