@@ -107,16 +107,16 @@ git clone https://github.com/GuilhermePortella/Mastering_Java_Language.git
  
  ![](https://i.imgur.com/waxVImv.png)
 
-# Curiosidades  
+# Curiosidades 
+ - [Mirror](https://pt.wikipedia.org/wiki/Mirror_(computa%C3%A7%C3%A3o))
+  - [Redundância Modular Tripla](https://pt.wikipedia.org/wiki/Redund%C3%A2ncia_modular_tripla)
  
 # Conceitos Importantes 
   - [Complexidade Ciclomática](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Algoritmos/Complexidade/Ciclom%C3%A1tica)
   - [Complexidade Cognitiva](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Algoritmos/Complexidade/Cognitiva)
   - [Tolerância a Falhas](https://pt.wikipedia.org/wiki/Toler%C3%A2ncia_a_falhas)
   - [Checagem de Integridade](https://pt.wikipedia.org/wiki/Checagem_de_integridade)
-  - [Redundância Modular Tripla](https://pt.wikipedia.org/wiki/Redund%C3%A2ncia_modular_tripla)
-  - [Mirror](https://pt.wikipedia.org/wiki/Mirror_(computa%C3%A7%C3%A3o))
-  - [CS50's Introduction to Computer Science - 2024](https://learning.edx.org/course/course-v1:HarvardX+CS50+X/home)
+ - [CS50's Introduction to Computer Science - 2024](https://learning.edx.org/course/course-v1:HarvardX+CS50+X/home)
 
 
 ![](https://i.imgur.com/waxVImv.png)
