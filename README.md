@@ -128,10 +128,36 @@ git clone https://github.com/GuilhermePortella/Mastering_Java_Language.git
 
 # Conceitos de Arquitetura explicados com Java
 
+ - EventDriven
+ - Trade Of
+ - Padrões de Mensageria e ferramentas
+ - Broker
+ - TradeOff Broker
+ - Saga Pattern
+ - Monolito/MicroServiços
+ - Orquestração
+ - CQRS
+ - Event Sourcing
+ - Anti Corruption Layer
+ - Padroes de Projeto e Pequenos exemplos.
+
 
 ![](https://i.imgur.com/waxVImv.png)
 
 # Conceitos de Engenharia explicados com Java
+
+ - Ciclo de Vida
+ - Requisitos
+ - Arquitetura
+ - Qualidade/SRE
+ - Testes
+ - Modelagem e Design
+ - Versionamento
+ - Processos e Métricas
+ - Segurança
+ - Observabilidade
+ - DevOps
+ - Cloud-Native
 
 
 ![](https://i.imgur.com/waxVImv.png)
