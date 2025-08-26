@@ -124,7 +124,14 @@ git clone https://github.com/GuilhermePortella/Mastering_Java_Language.git
  ![](https://i.imgur.com/waxVImv.png)
 
 # Algoritmos
- - Busca Heurística/Gulosa 
+ - Busca Heurística/Gulosa
+
+# Conceitos de Arquitetura explicados com Java
+
+
+![](https://i.imgur.com/waxVImv.png)
+
+# Conceitos de Engenharia explicados com Java
 
 
 ![](https://i.imgur.com/waxVImv.png)
