@@ -158,6 +158,15 @@ git clone https://github.com/GuilhermePortella/Mastering_Java_Language.git
  - Observabilidade
  - DevOps
  - Cloud-Native
+ - Detecção e correção de erros
+   - Código alternante
+   - Código binário de Golay
+   - Código de correção de erro
+   - Código Reed–Solomon
+   - Criptografia baseada em Hash
+   - Filtro Hash / Função hash
+   - MD5
+   - Hamming (7,4)
 
 
 ![](https://i.imgur.com/waxVImv.png)
