@@ -133,7 +133,6 @@ git clone https://github.com/GuilhermePortella/Mastering_Java_Language.git
  - Coleções e performance.
  - Strings/encoding.
  - Classloading e modularidade.
- - Erros e exceções.
 
 # Conceitos de Arquitetura explicados com Java
 
