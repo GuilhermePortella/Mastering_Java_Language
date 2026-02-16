@@ -123,8 +123,16 @@ git clone https://github.com/GuilhermePortella/Mastering_Java_Language.git
 
  ![](https://i.imgur.com/waxVImv.png)
 
-# Algoritmos
- - Busca Heurística/Gulosa
+# Algoritmos E Fundamenos.
+ - Busca Heurística/Gulosa.
+ - JMM (Java Memory Model).
+ - Project Loom.
+ - GC e heap.
+ - Profiling.
+ - I/O e NIO.
+ - Coleções e performance.
+ - Strings/encoding.
+ - Classloading e modularidade.
 
 # Conceitos de Arquitetura explicados com Java
 
@@ -140,7 +148,19 @@ git clone https://github.com/GuilhermePortella/Mastering_Java_Language.git
  - Event Sourcing
  - Anti Corruption Layer
  - Padroes de Projeto e Pequenos exemplos.
-
+ - Modelagem de domínio.
+ - Decomposição de sistemas
+ - Contratos e compatibilidade.
+ - Arquitetura orientada a eventos.
+ - Consistência distribuída.
+ - Dados e cache.
+ - Resiliência.
+ - Backpressure.
+ - Escalabilidade e disponibilidade.
+ - Spring internals essenciais.
+ - HTTP/REST.
+ - Serialização.
+ - Build/runtime.
 
 ![](https://i.imgur.com/waxVImv.png)
 
@@ -167,6 +187,12 @@ git clone https://github.com/GuilhermePortella/Mastering_Java_Language.git
    - Filtro Hash / Função hash
    - MD5
    - Hamming (7,4)
+ - Performance engineering.
+ - Entrega contínua.
+ - Confiabilidade (SRE mindset).
+ - Concorrência e paralelismo.
+ - Segurança aplicada.
+ - Operação em K8s.
 
 
 ![](https://i.imgur.com/waxVImv.png)
