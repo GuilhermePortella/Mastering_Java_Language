@@ -33,7 +33,7 @@ public class Pag_194_Al_278 {
         } else {
             System.out.println("Primo");
         }
-
+        scr.close();
     }
 
 }

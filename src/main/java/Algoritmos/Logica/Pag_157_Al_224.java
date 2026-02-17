@@ -18,7 +18,8 @@ public class Pag_157_Al_224 {
         nome = scr.nextLine();
 
         for (int a = nome.length(); a >= 0; a--) {
-            System.out.println(nome.substring(0,a));
+            System.out.println(nome.substring(0, a));
         }
+        scr.close();
     }
 }

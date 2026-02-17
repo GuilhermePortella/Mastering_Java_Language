@@ -11,7 +11,6 @@ public class Pag_359_Al_431 {
     public static void main(String[] args) {
 
         int m[][] = new int[3][3];
-        int fnl[][] = new int[3][3];
 
         Scanner scr = new Scanner(System.in);
 
@@ -35,5 +34,6 @@ public class Pag_359_Al_431 {
             }
             System.out.println("");
         }
+        scr.close();
     }
 }

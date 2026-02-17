@@ -23,6 +23,7 @@ public class Pag_47_Al_55 {
         area = (diagMaior * diagMenor) / 2;
 
         System.out.println("Area = " + area);
+        scr.close();
     }
 
 }

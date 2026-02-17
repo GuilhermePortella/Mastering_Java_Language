@@ -11,7 +11,7 @@ public class Pag_167_Al_242 {
     public static void main(String[] args) {
         Scanner scr = new Scanner(System.in);
 
-        int c, n;
+        int n;
 
         System.out.println("Qual a tabuada que deseja? ");
         n = scr.nextInt();
@@ -21,5 +21,7 @@ public class Pag_167_Al_242 {
                 System.out.println(n + " x " + i + " = " + n * i);
             }
         }
+
+        scr.close();
     }
 }
