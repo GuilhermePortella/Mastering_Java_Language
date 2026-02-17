@@ -1,1 +1,0 @@
-# Complexidade Cognitiva
