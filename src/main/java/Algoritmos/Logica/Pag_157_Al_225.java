@@ -20,5 +20,6 @@ public class Pag_157_Al_225 {
         for (int a = nome.length(); a >= 0; a--) {
             System.out.println(nome.substring(a));
         }
+        scr.close();
     }
 }

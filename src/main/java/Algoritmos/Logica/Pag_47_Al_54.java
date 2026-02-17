@@ -21,6 +21,8 @@ public class Pag_47_Al_54 {
         b = scr.nextDouble();
 
         System.out.print("Area = " + (a * b) / 2 + "\n");
+
+        scr.close();
     }
 
 }

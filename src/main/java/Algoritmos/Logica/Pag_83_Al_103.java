@@ -25,6 +25,7 @@ public class Pag_83_Al_103 {
             System.out.println("Idade " + (anoa - anon));
         }
 
+        scr.close();
     }
 
 }

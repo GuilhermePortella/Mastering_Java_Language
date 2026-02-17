@@ -13,8 +13,6 @@ public class Pag_139_Al_186 {
 
     public static void main(String[] args) {
         Scanner scr = new Scanner(System.in);
-
-        int a;
         double numero;
 
         for (int i = 0; i < 4; i++) {
@@ -28,5 +26,7 @@ public class Pag_139_Al_186 {
                 System.out.println("Raiz: " + Math.cbrt(numero));
             }
         }
+
+        scr.close();
     }
 }

@@ -19,5 +19,6 @@ public class Pag_298_Al_380 {
         for (int i = 29; i >= 0; i--) {
             System.out.println(num[i]);
         }
+        scr.close();
     }
 }

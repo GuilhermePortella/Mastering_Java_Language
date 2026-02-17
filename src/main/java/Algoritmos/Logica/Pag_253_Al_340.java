@@ -59,7 +59,8 @@ public class Pag_253_Al_340 {
             numeradorfracao = num1 + num2;
             denominadorfracao = soma;
         }
-        System.out.println("A soma das fracoes: " + n1 + " / " + d1 + " e " + n2 + " / " + d2 + "  = " + numeradorfracao + " / " + denominadorfracao);
+        System.out.println("A soma das fracoes: " + n1 + " / " + d1 + " e " + n2 + " / " + d2 + "  = " + numeradorfracao
+                + " / " + denominadorfracao);
         nf = Math.abs(numeradorfracao);
         pinteIra = nf / denominadorfracao;
         if (numeradorfracao < 0) {
@@ -75,5 +76,6 @@ public class Pag_253_Al_340 {
             }
             System.out.println("");
         }
+        scr.close();
     }
 }

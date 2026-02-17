@@ -16,7 +16,7 @@ public class Pag_165_Al_238 {
 
     public static void main(String[] args) {
         Scanner scr = new Scanner(System.in);
-        int c, num, n;
+        int num, n;
         double h;
 
         h = 0;
@@ -29,5 +29,7 @@ public class Pag_165_Al_238 {
             n = n - 1;
         }
         System.out.println("Soma: " + h);
+
+        scr.close();
     }
 }
