@@ -90,3 +90,4 @@ classes
 *.nar
 hs_err_pid*
 /nbproject/
+bash.exe.stackdump

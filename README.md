@@ -116,8 +116,8 @@ git clone https://github.com/GuilhermePortella/Mastering_Java_Language.git
  ![](https://i.imgur.com/waxVImv.png)
 
 # Conceitos Importantes 
-  - [Complexidade Ciclomática](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Algoritmos/Complexidade/Ciclom%C3%A1tica)
-  - [Complexidade Cognitiva](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Algoritmos/Complexidade/Cognitiva)
+  - [Complexidade Ciclomática](https://github.com/GuilhermePortella/Mastering_Java_Language/tree/main/src/main/java/Algoritmos/Complexidade/Ciclom%C3%A1tica)
+  - [Complexidade Cognitiva](https://github.com/GuilhermePortella/Mastering_Java_Language/tree/main/src/main/java/Algoritmos/Complexidade/Cognitiva)
  - [CS50's Introduction to Computer Science - 2024](https://learning.edx.org/course/course-v1:HarvardX+CS50+X/home)
  - Servidores de Aplicação
 
@@ -199,9 +199,9 @@ git clone https://github.com/GuilhermePortella/Mastering_Java_Language.git
 
 # Inicio de tudo em Java
  
-  - [Fundamentos](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo_1_Fundamentos) 
-  - [Introdução a tipos de dados e operadores](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo_2_Introdu%C3%A7%C3%A3o_a_Tipos_de_Dados_e_operadores)
-  - [Instruções de controle de programa](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo_3_Instru%C3%A7%C3%B5es_de_Controle_de_Programa)
+  - [Fundamentos](https://github.com/GuilhermePortella/Mastering_Java_Language/tree/main/src/main/java/books/schildt/Capitulo_1_Fundamentos) 
+  - [Introdução a tipos de dados e operadores](https://github.com/GuilhermePortella/Mastering_Java_Language/tree/main/src/main/java/books/schildt/Capitulo_2_Introdu%C3%A7%C3%A3o_a_Tipos_de_Dados_e_operadores)
+  - [Instruções de controle de programa](https://github.com/GuilhermePortella/Mastering_Java_Language/tree/main/src/main/java/books/schildt/Capitulo_3_Instru%C3%A7%C3%B5es_de_Controle_de_Programa) -
   - [Introdução a classes, objetos e métodos](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo_4_Introducao_a_Classes_Objetos_e_Metodos)
   - [Mais tipos de dados e operadores](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo_5_Mais_tipos_de_Dados_e_Operadores)
   - [Verificação minuciosa dos métodos e classes](https://github.com/GuilhermePortella/Conceitos-Basicos-da-Linguagem-Java/tree/main/src/Capitulo_6_Verificacao_Minuciosa_dos_Metodos_e_Classes)
