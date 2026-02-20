@@ -77,7 +77,7 @@ public class BFSGrandeVolume {
         final int NUM_ARESTAS = 50_000; // 50 mil arestas aleatórias
 
         System.out.println("=== BFS com Alto Volume de Dados ===");
-        System.out.printf("Gerando grafo com %,d vértices e %,d arestas...%n",
+        System.out.printf("Gerando grafo com %,d vertices e %,d arestas...%n",
                 NUM_VERTICES, NUM_ARESTAS);
 
         // --- Geração do grafo ------------------------------------------------
@@ -105,7 +105,7 @@ public class BFSGrandeVolume {
         System.out.printf("Grafo gerado em %d ms.%n", fimGeracao - inicio);
 
         // --- Execução do BFS -------------------------------------------------
-        System.out.println("\nIniciando BFS a partir do vértice 0...");
+        System.out.println("\nIniciando BFS a partir do vertice 0...");
         long inicioBFS = System.currentTimeMillis();
 
         int visitados = grafo.bfs(0);
@@ -113,22 +113,22 @@ public class BFSGrandeVolume {
         long fimBFS = System.currentTimeMillis();
 
         // --- Resultados ------------------------------------------------------
-        System.out.printf("Vértices visitados pelo BFS : %,d / %,d%n",
+        System.out.printf("Vertices visitados pelo BFS : %,d / %,d%n",
                 visitados, NUM_VERTICES);
-        System.out.printf("Tempo de execução do BFS    : %d ms%n",
+        System.out.printf("Tempo de execucão do BFS    : %d ms%n",
                 fimBFS - inicioBFS);
-        System.out.printf("Tempo total (geração + BFS) : %d ms%n",
+        System.out.printf("Tempo total (geracão + BFS) : %d ms%n",
                 fimBFS - inicio);
 
         // --- Por que usar BFS e não DFS para grandes volumes? ----------------
-        System.out.println("\n--- Observações ---");
-        System.out.println("• BFS usa uma FILA (FIFO): explora nível a nível (camada por camada).");
-        System.out.println("• DFS usa uma PILHA (LIFO): mergulha fundo antes de voltar.");
-        System.out.println("• Em grafos densos ou muito profundos, o DFS recursivo pode");
-        System.out.println("  causar StackOverflowError. O BFS iterativo é mais seguro.");
-        System.out.println("• A LISTA DE ADJACÊNCIA usa O(V+E) de memória, enquanto a");
-        System.out.println("  MATRIZ DE ADJACÊNCIA usaria O(V²) — inviável para 10k vértices");
-        System.out.printf("  (seriam %,d células vs %,d entradas na lista).%n",
+        System.out.println("\n--- Observacoes ---");
+        System.out.println("BFS usa uma FILA (FIFO): explora nivel a nivel (camada por camada).");
+        System.out.println("DFS usa uma PILHA (LIFO): mergulha fundo antes de voltar.");
+        System.out.println("Em grafos densos ou muito profundos, o DFS recursivo pode");
+        System.out.println("causar StackOverflowError. O BFS iterativo e mais seguro.");
+        System.out.println("A LISTA DE ADJACENCIA usa O(V+E) de memoria, enquanto a");
+        System.out.println("MATRIZ DE ADJACENCIA usaria O(V²) — inviavel para 10k vertices");
+        System.out.printf("(seriam %,d celulas vs %,d entradas na lista).%n",
                 (long) NUM_VERTICES * NUM_VERTICES, NUM_ARESTAS * 2);
     }
 }
