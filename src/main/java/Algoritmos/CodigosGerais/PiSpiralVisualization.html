@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<!--
+  ╔══════════════════════════════════════════════════════════════════╗
+  ║         PI SPIRAL VISUALIZATION — Deep Space Edition            ║
+  ║  Dígitos de π mapeados em espiral de Arquimedes com efeito      ║
+  ║  nebula (Perlin Noise), gradiente ouro-azul e bloom intenso.    ║
+  ╚══════════════════════════════════════════════════════════════════╝
+-->
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>π — Espiral Cósmica</title>
+  <style>
+    /* ── Reset e fundo de espaço profundo ─────────────────────────── */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #000008;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      font-family: 'Georgia', serif;
+      overflow: hidden;
+    }
+
+    /* ── Contêiner principal ─────────────────────────────────────── */
+    #container {
+      position: relative;
+      width: 900px;
+      height: 900px;
+    }
+
+    /* Canvas de fundo: estrelas e bloom ─────────────────────────── */
+    #bgCanvas, #mainCanvas, #bloomCanvas {
+      position: absolute;
+      top: 0; left: 0;
+      border-radius: 12px;
+    }
+
+    /* ── HUD – informações sobrespostas ─────────────────────────── */
+    #hud {
+      position: absolute;
+      top: 18px; left: 26px;
+      color: rgba(255, 220, 80, 0.85);
+      font-size: 13px;
+      letter-spacing: 0.08em;
+      text-shadow: 0 0 10px rgba(255, 190, 0, 0.9);
+      pointer-events: none;
+    }
+    #hud h1 { font-size: 28px; letter-spacing: 0.2em; margin-bottom: 4px; }
+    #hud p  { font-size: 11px; opacity: 0.7; }
+
+    /* ── Legenda de controles ────────────────────────────────────── */
+    #controls {
+      position: absolute;
+      bottom: 18px; right: 22px;
+      color: rgba(100, 180, 255, 0.7);
+      font-size: 11px;
+      text-align: right;
+      line-height: 1.8;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+
+<div id="container">
+  <!-- Camada 0: estrelas de fundo, renderizada uma vez -->
+  <canvas id="bgCanvas"   width="900" height="900"></canvas>
+  <!-- Camada 1: principal – espiral + dígitos + partículas -->
+  <canvas id="mainCanvas" width="900" height="900"></canvas>
+  <!-- Camada 2: bloom (blur suave via offscreen) -->
+  <canvas id="bloomCanvas" width="900" height="900"></canvas>
+
+  <div id="hud">
+    <h1>π</h1>
+    <p id="digitCount">Dígitos: 0</p>
+    <p id="fps">FPS: –</p>
+  </div>
+
+  <div id="controls">
+    Scroll → zoom &nbsp;|&nbsp; Drag → pan<br/>
+    Clique num dígito → destaque
+  </div>
+</div>
+
+<script>
+/* ══════════════════════════════════════════════════════════════════
+   MÓDULO 1 – DÍGITOS DE π
+   Retorna os primeiros N dígitos de π como array de inteiros.
+   Usa a fórmula de Machin (série de arctan) para N ≤ ~1 000.
+   Para N maiores usaríamos uma biblioteca (e.g. pi-decimals).
+   ══════════════════════════════════════════════════════════════════ */
+const PiDigits = (() => {
+  /**
+   * Calcula π com `precision` casas decimais usando a fórmula de Machin:
+   *   π/4 = 4·arctan(1/5) − arctan(1/239)
+   * Trabalha com BigInt para precisão arbitrária.
+   */
+  function computePi(precision) {
+    const SCALE = 10n ** BigInt(precision + 10); // margem de segurança
+
+    // arctan(1/x) via série de Leibniz:  arctan(1/x) = 1/x - 1/(3x³) + 1/(5x⁵) - …
+    function arctan(x) {
+      const xBig = BigInt(x);
+      let sum = 0n, num = SCALE / xBig, den = 1n, sign = 1n;
+      while (num !== 0n) {
+        sum += sign * num / den;
+        num /= xBig * xBig;
+        den += 2n;
+        sign = -sign;
+      }
+      return sum;
+    }
+
+    const pi = 4n * (4n * arctan(5) - arctan(239));
+    const piStr = pi.toString();          // "314159265358…"
+    // Reinsere "3." e converte em array de dígitos
+    return [3, ...piStr.slice(1).split('').map(Number)].slice(0, precision);
+  }
+
+  return { computePi };
+})();
+
+/* ══════════════════════════════════════════════════════════════════
+   MÓDULO 2 – PERLIN NOISE (1-D e 2-D)
+   Implementação clássica do algoritmo de Ken Perlin.
+   Usado para animar o rastro suave das partículas-nebula.
+   ══════════════════════════════════════════════════════════════════ */
+const Perlin = (() => {
+  // Tabela de permutação embaralhada
+  const perm = new Uint8Array(512);
+  const base = new Uint8Array(256);
+  for (let i = 0; i < 256; i++) base[i] = i;
+  // Fisher-Yates com semente fixa para reprodutibilidade
+  let seed = 42;
+  for (let i = 255; i > 0; i--) {
+    seed = (seed * 1664525 + 1013904223) & 0xffffffff;
+    const j = ((seed >>> 0) % (i + 1));
+    [base[i], base[j]] = [base[j], base[i]];
+  }
+  for (let i = 0; i < 512; i++) perm[i] = base[i & 255];
+
+  function fade(t) { return t * t * t * (t * (t * 6 - 15) + 10); }
+  function lerp(a, b, t) { return a + t * (b - a); }
+  function grad(h, x, y) {
+    const u = (h & 1) ? x : y, v = (h & 2) ? x : y;
+    return ((h & 4) ? -u : u) + ((h & 8) ? -v : v);
+  }
+
+  /**
+   * Retorna valor de ruído 2-D em (x, y) no intervalo [-1, 1].
+   */
+  function noise2(x, y) {
+    const X = Math.floor(x) & 255, Y = Math.floor(y) & 255;
+    x -= Math.floor(x); y -= Math.floor(y);
+    const u = fade(x), v = fade(y);
+    const a = perm[X] + Y, b = perm[X + 1] + Y;
+    return lerp(
+      lerp(grad(perm[a],     x,     y    ), grad(perm[b],     x - 1, y    ), u),
+      lerp(grad(perm[a + 1], x,     y - 1), grad(perm[b + 1], x - 1, y - 1), u),
+      v
+    );
+  }
+
+  return { noise2 };
+})();
+
+/* ══════════════════════════════════════════════════════════════════
+   MÓDULO 3 – MAPEAMENTO GEOMÉTRICO
+   Converte índice i → coordenadas polares → cartesianas (px, py).
+
+   Espiral de Arquimedes:  r = a·θ,  θ = k·i
+     a  : espaçamento radial por volta
+     k  : incremento angular por dígito
+
+   O parâmetro `spiralStep` define quanto θ avança por dígito.
+   ══════════════════════════════════════════════════════════════════ */
+const SpiralMapper = (() => {
+  const TWO_PI = Math.PI * 2;
+  const a      = 6.5;    // espaçamento radial (px por radiano)
+  const k      = 0.25;   // incremento angular (rad por dígito) → ~25 dígitos/volta
+
+  /**
+   * Retorna { r, theta, x, y } para o dígito de índice `i`.
+   * @param {number} i  - índice do dígito (0-based)
+   * @param {number} cx - centro X do canvas
+   * @param {number} cy - centro Y do canvas
+   * @param {number} rotation - rotação global extra (rad)
+   */
+  function map(i, cx, cy, rotation = 0) {
+    const theta = k * i + rotation;
+    const r     = a * theta;
+    const x     = cx + r * Math.cos(theta);
+    const y     = cy + r * Math.sin(theta);
+    return { r, theta, x, y };
+  }
+
+  return { map, a, k };
+})();
+
+/* ══════════════════════════════════════════════════════════════════
+   MÓDULO 4 – SISTEMA DE PARTÍCULAS (Nebula)
+   Cada Particle é emitida por um dígito e segue um campo de vetores
+   baseado em Perlin Noise, criando o efeito de gás cósmico.
+   ══════════════════════════════════════════════════════════════════ */
+class Particle {
+  /**
+   * @param {number} ox - origem X (posição do dígito emissor)
+   * @param {number} oy - origem Y
+   * @param {string} color - cor base da partícula
+   */
+  constructor(ox, oy, color) {
+    this.reset(ox, oy, color);
+  }
+
+  reset(ox, oy, color) {
+    this.x     = ox + (Math.random() - 0.5) * 10;
+    this.y     = oy + (Math.random() - 0.5) * 10;
+    this.ox    = ox;
+    this.oy    = oy;
+    this.color = color;
+    this.life  = 1.0;                           // valor [0,1], morre quando ≤ 0
+    this.decay = 0.004 + Math.random() * 0.006; // velocidade de morte
+    this.size  = 1.0 + Math.random() * 2.0;
+    this.vx    = (Math.random() - 0.5) * 0.4;
+    this.vy    = (Math.random() - 0.5) * 0.4;
+    this.noiseOffset = Math.random() * 100;     // fase única no campo de Perlin
+    this.alive = true;
+  }
+
+  /**
+   * Atualiza posição usando campo de vetores de Perlin Noise.
+   * @param {number} t - tempo global (usado como 3ª dimensão do ruído)
+   */
+  update(t) {
+    const nx = Perlin.noise2(this.x * 0.012 + this.noiseOffset, t * 0.15);
+    const ny = Perlin.noise2(this.y * 0.012 + this.noiseOffset + 97, t * 0.15);
+
+    this.vx = this.vx * 0.92 + nx * 0.55;
+    this.vy = this.vy * 0.92 + ny * 0.55;
+    this.x  += this.vx;
+    this.y  += this.vy;
+    this.life -= this.decay;
+
+    if (this.life <= 0) this.alive = false;
+  }
+
+  /**
+   * Renderiza a partícula com alpha proporcional à vida restante.
+   * @param {CanvasRenderingContext2D} ctx
+   */
+  draw(ctx) {
+    const alpha = this.life * 0.6;
+    ctx.save();
+    ctx.globalAlpha = alpha;
+    ctx.fillStyle   = this.color;
+    ctx.shadowColor = this.color;
+    ctx.shadowBlur  = this.size * 3;
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.restore();
+  }
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   MÓDULO 5 – PALETA DE CORES
+   Gradiente contínuo de ouro metálico (#FFD700) → azul elétrico (#00BFFF)
+   mapeado ao índice do dígito / total de dígitos.
+   ══════════════════════════════════════════════════════════════════ */
+const Palette = (() => {
+  // Âncoras de cor no espaço RGB
+  const stops = [
+    { t: 0.0,  r: 255, g: 215, b:   0 },   // ouro
+    { t: 0.35, r: 255, g: 140, b:  20 },   // laranja dourado
+    { t: 0.65, r:  80, g: 180, b: 255 },   // azul claro
+    { t: 1.0,  r:   0, g: 100, b: 255 },   // azul elétrico profundo
+  ];
+
+  /**
+   * Retorna uma string CSS rgba a partir de t ∈ [0,1].
+   * @param {number} t  - posição [0,1] no gradiente
+   * @param {number} a  - alpha [0,1]
+   */
+  function colorAt(t, a = 1) {
+    let lo = stops[0], hi = stops[stops.length - 1];
+    for (let i = 0; i < stops.length - 1; i++) {
+      if (t >= stops[i].t && t <= stops[i + 1].t) {
+        lo = stops[i]; hi = stops[i + 1]; break;
+      }
+    }
+    const f = (t - lo.t) / (hi.t - lo.t || 1);
+    const r = Math.round(lo.r + f * (hi.r - lo.r));
+    const g = Math.round(lo.g + f * (hi.g - lo.g));
+    const b = Math.round(lo.b + f * (hi.b - lo.b));
+    return `rgba(${r},${g},${b},${a})`;
+  }
+
+  return { colorAt };
+})();
+
+/* ══════════════════════════════════════════════════════════════════
+   MÓDULO 6 – ENGINE PRINCIPAL
+   Orquestra: canvases, loop de animação, interação e renderização.
+   ══════════════════════════════════════════════════════════════════ */
+const Engine = (() => {
+  // ── Referências de DOM e Canvas ────────────────────────────────
+  const bgCanvas    = document.getElementById('bgCanvas');
+  const mainCanvas  = document.getElementById('mainCanvas');
+  const bloomCanvas = document.getElementById('bloomCanvas');
+  const bgCtx       = bgCanvas.getContext('2d');
+  const ctx         = mainCanvas.getContext('2d');
+  const bloomCtx    = bloomCanvas.getContext('2d');
+
+  // ── Canvas offscreen para bloom (dois buffers alternados) ──────
+  // O bloom é gerado aplicando um blur gaussiano numa cópia da cena.
+  const offscreen = new OffscreenCanvas(900, 900);
+  const offCtx    = offscreen.getContext('2d');
+
+  const W = 900, H = 900, CX = W / 2, CY = H / 2;
+
+  // ── Configuração da espiral ────────────────────────────────────
+  const N_DIGITS       = 500;   // quantidade de dígitos de π exibidos
+  const MAX_PARTICLES  = 4000;  // pool de partículas (reaproveitadas)
+  const EMIT_INTERVAL  = 3;     // a cada N frames, emite partículas
+
+  // ── Estado da animação ─────────────────────────────────────────
+  let digits       = [];
+  let particles    = [];
+  let frame        = 0;
+  let rotation     = 0;         // rotação global incremental (rad)
+  let highlighted  = -1;        // índice do dígito clicado (-1 = nenhum)
+  let panX = 0, panY = 0;       // deslocamento de câmera
+  let zoom = 1.0;
+
+  // ── Interação: pan com drag ────────────────────────────────────
+  let dragging = false, dragStartX = 0, dragStartY = 0,
+      panStartX = 0, panStartY = 0;
+
+  mainCanvas.addEventListener('mousedown', e => {
+    dragging   = true;
+    dragStartX = e.clientX; dragStartY = e.clientY;
+    panStartX  = panX;      panStartY  = panY;
+  });
+  mainCanvas.addEventListener('mousemove', e => {
+    if (!dragging) return;
+    panX = panStartX + (e.clientX - dragStartX);
+    panY = panStartY + (e.clientY - dragStartY);
+  });
+  mainCanvas.addEventListener('mouseup',   () => { dragging = false; });
+
+  // ── Interação: zoom com scroll ────────────────────────────────
+  mainCanvas.addEventListener('wheel', e => {
+    e.preventDefault();
+    zoom *= e.deltaY < 0 ? 1.08 : 0.93;
+    zoom = Math.max(0.3, Math.min(5, zoom));
+  }, { passive: false });
+
+  // ── Interação: clique num dígito ──────────────────────────────
+  mainCanvas.addEventListener('click', e => {
+    const rect = mainCanvas.getBoundingClientRect();
+    const mx = (e.clientX - rect.left - W/2 - panX) / zoom;
+    const my = (e.clientY - rect.top  - H/2 - panY) / zoom;
+    let closest = -1, minD = 22;
+    for (let i = 0; i < digits.length; i++) {
+      const pos = SpiralMapper.map(i, 0, 0, rotation);
+      const d   = Math.hypot(pos.x - mx, pos.y - my);
+      if (d < minD) { minD = d; closest = i; }
+    }
+    highlighted = (closest === highlighted) ? -1 : closest;
+  });
+
+  // ── Geração das estrelas de fundo (renderizado 1 vez) ─────────
+  function drawBackground() {
+    bgCtx.fillStyle = '#000008';
+    bgCtx.fillRect(0, 0, W, H);
+
+    // Estrelas aleatórias com tamanhos e brilhos variados
+    const starCount = 350;
+    for (let i = 0; i < starCount; i++) {
+      const x = Math.random() * W, y = Math.random() * H;
+      const r = Math.random() * 1.2;
+      const a = 0.3 + Math.random() * 0.7;
+      bgCtx.save();
+      bgCtx.globalAlpha   = a;
+      bgCtx.shadowColor   = '#ffffff';
+      bgCtx.shadowBlur    = r * 4;
+      bgCtx.fillStyle     = '#ffffff';
+      bgCtx.beginPath();
+      bgCtx.arc(x, y, r, 0, Math.PI * 2);
+      bgCtx.fill();
+      bgCtx.restore();
+    }
+
+    // Gradiente radial: "brilho central" da nebulosa de fundo
+    const grad = bgCtx.createRadialGradient(CX, CY, 0, CX, CY, 400);
+    grad.addColorStop(0,   'rgba(15, 10, 40, 0.55)');
+    grad.addColorStop(0.6, 'rgba(5,  5,  20, 0.30)');
+    grad.addColorStop(1,   'rgba(0,  0,   8, 0.0)');
+    bgCtx.fillStyle = grad;
+    bgCtx.fillRect(0, 0, W, H);
+  }
+
+  // ── Emissão de partículas ─────────────────────────────────────
+  function emitParticles() {
+    for (let i = 0; i < digits.length; i++) {
+      // Emite com probabilidade inversamente proporcional ao índice
+      // (centro mais denso que a periferia)
+      if (Math.random() > 0.06 + 0.04 * (i / digits.length)) continue;
+
+      const pos   = SpiralMapper.map(i, CX + panX, CY + panY, rotation);
+      const t     = i / (digits.length - 1);
+      const color = Palette.colorAt(t, 1.0);
+
+      if (particles.length < MAX_PARTICLES) {
+        particles.push(new Particle(pos.x, pos.y, color));
+      } else {
+        // Reaproveitamento: busca a primeira partícula morta
+        const dead = particles.find(p => !p.alive);
+        if (dead) dead.reset(pos.x, pos.y, color);
+      }
+    }
+  }
+
+  // ── Renderização de partículas ────────────────────────────────
+  function drawParticles() {
+    for (const p of particles) {
+      if (!p.alive) continue;
+      p.update(frame * 0.016);
+      p.draw(ctx);
+    }
+  }
+
+  // ── Renderização dos dígitos de π ─────────────────────────────
+  function drawDigits() {
+    for (let i = 0; i < digits.length; i++) {
+      const pos      = SpiralMapper.map(i, 0, 0, rotation);
+      const t        = i / (digits.length - 1);
+      const isCenter = i === 0;          // o "3" inicial
+      const isHigh   = i === highlighted;
+
+      // Tamanho: decresce do centro para a borda (perspectiva suave)
+      const baseSize = isCenter ? 26 : Math.max(8, 18 - i * 0.018);
+      const size     = isHigh ? baseSize * 1.6 : baseSize;
+
+      ctx.save();
+      ctx.translate(pos.x, pos.y);
+
+      // Brilho (bloom simulado via shadowBlur)
+      ctx.shadowBlur  = isHigh ? 28 : 12;
+      ctx.shadowColor = Palette.colorAt(t, 0.9);
+
+      // Ponto decimal implícito após o primeiro dígito
+      const label = (i === 1) ? '.' + digits[i] : String(digits[i]);
+
+      ctx.font        = `${size}px Georgia, 'Times New Roman', serif`;
+      ctx.fillStyle   = Palette.colorAt(t, isHigh ? 1.0 : 0.88);
+      ctx.textAlign   = 'center';
+      ctx.textBaseline= 'middle';
+      ctx.fillText(label, 0, 0);
+
+      // Halo extra para o dígito destacado
+      if (isHigh) {
+        ctx.globalAlpha = 0.25;
+        ctx.shadowBlur  = 50;
+        ctx.fillText(label, 0, 0);
+      }
+
+      ctx.restore();
+    }
+  }
+
+  // ── Bloom: aplica blur gaussiano leve sobre a cena principal ──
+  function applyBloom() {
+    offCtx.clearRect(0, 0, W, H);
+    offCtx.drawImage(mainCanvas, 0, 0);
+
+    bloomCtx.clearRect(0, 0, W, H);
+    bloomCtx.filter = 'blur(6px) brightness(1.4)';
+    bloomCtx.globalAlpha = 0.38;
+    bloomCtx.drawImage(offscreen, 0, 0);
+    bloomCtx.filter = 'none';
+    bloomCtx.globalAlpha = 1;
+  }
+
+  // ── HUD ───────────────────────────────────────────────────────
+  let lastFpsTime = performance.now(), fpsCount = 0, lastFps = 60;
+  function updateHUD() {
+    fpsCount++;
+    const now = performance.now();
+    if (now - lastFpsTime >= 1000) {
+      lastFps     = fpsCount;
+      fpsCount    = 0;
+      lastFpsTime = now;
+    }
+    document.getElementById('digitCount').textContent =
+      `Dígitos de π: ${digits.length}` +
+      (highlighted >= 0 ? `  ·  Dígito #${highlighted} = ${digits[highlighted]}` : '');
+    document.getElementById('fps').textContent = `FPS: ${lastFps}`;
+  }
+
+  // ── Loop principal ────────────────────────────────────────────
+  function loop() {
+    // 1. Limpa canvas principal
+    ctx.clearRect(0, 0, W, H);
+
+    // 2. Aplica transformação de câmera (pan + zoom)
+    ctx.save();
+    ctx.translate(CX + panX, CY + panY);
+    ctx.scale(zoom, zoom);
+
+    // 3. Partículas (por baixo dos dígitos)
+    if (frame % EMIT_INTERVAL === 0) emitParticles();
+    drawParticles();
+
+    // 4. Dígitos
+    drawDigits();
+
+    ctx.restore();
+
+    // 5. Bloom composto sobre a cena
+    applyBloom();
+
+    // 6. HUD e contadores
+    updateHUD();
+
+    // 7. Rotação lenta da espiral
+    rotation += 0.0008;
+    frame++;
+
+    requestAnimationFrame(loop);
+  }
+
+  // ── Inicialização pública ─────────────────────────────────────
+  function init() {
+    console.log('π Spiral Engine – iniciando…');
+    digits = PiDigits.computePi(N_DIGITS);
+    console.log('π gerado:', digits.slice(0, 20).join(''), '…');
+
+    drawBackground();
+    loop();
+  }
+
+  return { init };
+})();
+
+// ── Ponto de entrada ──────────────────────────────────────────────
+window.addEventListener('load', () => Engine.init());
+</script>
+</body>
+</html>
